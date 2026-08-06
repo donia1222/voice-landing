@@ -266,6 +266,30 @@ section { padding-block: var(--seccion); }
 }
 .video-marco video, .video-marco img.cartel { width: 100%; height: 100%; object-fit: cover; }
 .video-marco.es-cuadrado { aspect-ratio: 1 / 1; }
+
+/* Placeholder borroso incrustado (unas 400 bytes cada uno): pinta al instante
+   con el HTML, así nunca hay un hueco vacío mientras carga el cartel y, tras
+   él, el vídeo. Se escala desde 20 px de ancho, de ahí el desenfoque. */
+.video-marco[data-lqip="hero"] {
+  background-image: url("data:image/jpeg;base64,/9j//gAQTGF2YzYyLjExLjEwMAD/2wBDAAgYGBwYHCEhISEhISckJygoKCcnJycoKCgrKyszMzMrKysoKCsrMDAzMzc5NzQ0MzQ5OTw8PEhIRUVUVFdnZ3z/xABpAAACAwEBAAAAAAAAAAAAAAADBQQBBwYCAQEBAAAAAAAAAAAAAAAAAAADBBAAAQMEAAYCAwEAAAAAAAAAAQIRAAMhBBIxIjKh0VFh8HKBQXERAQADAQEAAAAAAAAAAAAAAAABETESIf/AABEIABQAFAMBIgACEQADEQD/2gAMAwEAAhEDEQA/AGuXUCb016qJu4YEtb/YTHXTr4oqqJCulTD+vfheZtm1VDJZnCQLM4vxl4RqU1VU30VzBwWLHsYXPkHtrSFapZIDfuSN1fHeJkKOoh9j9A8QKNbjcqmDzOoH4MHQBShY2VzKvf1J+T0yLR6T+USMDOnwDAXMJf2e3iUOAnqTmf/Z");
+  background-size: cover;
+  background-position: center;
+}
+.video-marco[data-lqip="supermercado"] {
+  background-image: url("data:image/jpeg;base64,/9j//gAQTGF2YzYyLjExLjEwMAD/2wBDAAgYGBwYHCEhISEhISckJygoKCcnJycoKCgrKyszMzMrKysoKCsrMDAzMzc5NzQ0MzQ5OTw8PEhIRUVUVFdnZ3z/xAB5AAEAAwEBAAAAAAAAAAAAAAADBAIBBQYBAQEBAQAAAAAAAAAAAAAAAAMEAAEQAAECBAEKBAcBAAAAAAAAAAECABEDIRIxcdGRBBNBUlGBsRRCIySCoZNjM2Jh8BEAAgEFAQEBAAAAAAAAAAAAAQBxEZIyIQITElH/wAARCAAUABQDASIAAhEAAxEA/9oADAMBAAIRAxEAPwCyETTcIpSR5YJrkyupCpZQFRWo/aiMd5gNIfG8TaQpZShJgQIE4f7k1VN2tomUtNKxiNxqAOmDHYC1XpLvuoiX0CR3qw9TgRoRmcInVzioD+GTmoz9txp+kczh9D+dWlb5i4Ia7LTshTBSfmYObPECz138XxI7tp+LuOIl5xkYL56zkVDIXtn7L0uS9eq0ACg0H//Z");
+  background-size: cover;
+  background-position: center;
+}
+.video-marco[data-lqip="compartir"] {
+  background-image: url("data:image/jpeg;base64,/9j//gAQTGF2YzYyLjExLjEwMAD/2wBDAAgYGBwYHCEhISEhISckJygoKCcnJycoKCgrKyszMzMrKysoKCsrMDAzMzc5NzQ0MzQ5OTw8PEhIRUVUVFdnZ3z/xABwAAADAQEAAAAAAAAAAAAAAAAGBAcFAwEBAQEBAAAAAAAAAAAAAAAABQQBAhAAAgAEAwUFCQEAAAAAAAAAAQIRAwAhEgQxQVETgbFS0ZFhBTMUInKhgnEyYlMRAQEBAQAAAAAAAAAAAAAAAAABESH/wAARCAAUABQDASIAAhEAAxEA/9oADAMBAAIRAxEAPwDS4uBzGIDHZv52pOf6gs6Y0vDCwwkn9oG9tlcJrtLu2Ej5Qb7r6dKmcxXxMzBlMcQ/m2g51LJqi8UxJ00L8KLDzJprjz+yniaVTKIwiJkzzuNYCOymfc1/0meI7q41oj4aEQgIR6UE5hElM0EU2OojVB3c6BM7q34ND0tCuVmM8vETCLGwhCtqLdo/TuocyXsfubrRFSg9/9k=");
+  background-size: cover;
+  background-position: center;
+}
+.video-marco[data-lqip="widget"] {
+  background-image: url("data:image/jpeg;base64,/9j//gAQTGF2YzYyLjExLjEwMAD/2wBDAAgYGBwYHCEhISEhISckJygoKCcnJycoKCgrKyszMzMrKysoKCsrMDAzMzc5NzQ0MzQ5OTw8PEhIRUVUVFdnZ3z/xABpAAEBAQEBAAAAAAAAAAAAAAAFBgIHBAEBAQEBAQAAAAAAAAAAAAAAAwIABQQQAAEEAAMIAwEAAAAAAAAAAAECAAMRUQQTEhQhQpEigTHB0QVBEQEBAQEBAAAAAAAAAAAAAAABACExEf/AABEIABQAFAMBIgACEQADEQD/2gAMAwEAAhEDEQA/AOiQhOjESBZQCe1J4+Q3EpQeRPQfT8mXQBDED/EgNOgGW+y3NM9LpTbIAHaC5reTg2P0inX4nkHy5C0YvpBnW8S7yvjm5YgEiqGIaceakV7ro4+X21YmbULamQmZe0sWarwGfu8eDYLw9Vf/2Q==");
+  background-size: cover;
+  background-position: center;
+}
 /* El vídeo del hero es cuadrado: se limita para que no empuje el hero
    hasta ocupar toda la pantalla en portátiles. */
 .video-marco.hero-video { max-width: 30rem; margin-inline: auto; }
@@ -495,8 +519,12 @@ section { padding-block: var(--seccion); }
   transform: translateY(110%); transition: transform .28s ease;
 }
 .barra-movil[data-visible="si"] { transform: none; }
-.barra-movil .boton { flex: 1; }
 @media (min-width: 52rem) { .barra-movil { display: none; } }
+
+.barra-tienda { display: block; flex: 1; min-width: 0; }
+.barra-tienda img { height: 2.9rem; width: auto; margin-inline: auto; }
+/* Con una sola tienda, la insignia se centra y respira. */
+.barra-movil[data-tienda="una"] .barra-tienda img { height: 3.1rem; }
 
 /* --------------------------------------------------------- contenido --- */
 /* páginas legales y de soporte: una columna de lectura cómoda */

@@ -34,6 +34,23 @@
   addEventListener('scroll', alDesplazar, { passive: true })
   alDesplazar()
 
+  // ------------------------------------- una sola tienda en la barra fija
+  // Sin JS se ven las dos, que es lo correcto: esto solo quita la que sobra.
+  if (barra) {
+    var ua = navigator.userAgent || ''
+    var esIOS =
+      /iPad|iPhone|iPod/.test(ua) ||
+      // iPadOS se hace pasar por Mac; lo delata el táctil.
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+    var esAndroid = /Android/.test(ua)
+
+    if (esIOS || esAndroid) {
+      var sobra = barra.querySelector('[data-tienda="' + (esIOS ? 'android' : 'ios') + '"]')
+      if (sobra) sobra.hidden = true
+      barra.dataset.tienda = 'una'
+    }
+  }
+
   // ----------------------------------------- cierre del menú de idiomas
   var menu = document.querySelector('.idiomas')
   if (menu) {

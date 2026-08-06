@@ -31,7 +31,7 @@
 
       <!-- El vídeo lleva los subtítulos encima, en HTML, para que sirva
            el mismo archivo en todos los idiomas. -->
-      <figure class="video-marco es-cuadrado hero-video" style="margin:0">
+      <figure class="video-marco es-cuadrado hero-video" data-lqip="hero" style="margin:0">
         <video poster="/img/cartel-hero.jpg" muted playsinline loop preload="metadata">
           <source src="/video/hero.mp4" type="video/mp4">
         </video>
@@ -51,7 +51,7 @@
   <!-- Vídeo cuadrado: va al lado del texto, no a lo ancho. -->
   <section id="compartir" style="background:var(--surface-2)">
     <div class="contenedor compartir-rejilla">
-      <figure class="video-marco es-cuadrado" style="margin:0">
+      <figure class="video-marco es-cuadrado" data-lqip="compartir" style="margin:0">
         <video poster="/img/cartel-compartir.jpg" muted playsinline loop preload="none">
           <source src="/video/compartir.mp4" type="video/mp4">
         </video>
@@ -81,7 +81,7 @@
         <p class="entradilla">{{knowPricesDesc}}</p>
       </div>
 
-      <figure class="video-marco es-cuadrado" style="margin:0">
+      <figure class="video-marco es-cuadrado" data-lqip="supermercado" style="margin:0">
         <video poster="/img/cartel-supermercado.jpg" muted playsinline loop preload="none">
           <source src="/video/supermercado.mp4" type="video/mp4">
         </video>
@@ -123,7 +123,7 @@
       <p class="entradilla" style="margin-top:.9rem">{{widgetDescription}}</p>
       <!-- Grabación real del widget en la pantalla de inicio. Sin subtítulos:
            dura tres segundos y se explica sola. -->
-      <figure class="video-marco widget-video" style="margin:2.5rem auto 0">
+      <figure class="video-marco widget-video" data-lqip="widget" style="margin:2.5rem auto 0">
         <video poster="/img/cartel-widget.jpg" muted playsinline loop preload="none"
                aria-label="{{quickAccess}}">
           <source src="/video/widget.mp4" type="video/mp4">
@@ -317,9 +317,19 @@
 </main>
 
 <!-- barra fija de descarga en móvil, aparece al pasar el hero -->
+<!-- Salen las dos tiendas por defecto; app.js oculta la que no toca según el
+     dispositivo. Sin JS se ven ambas, que es lo correcto. -->
 <div class="barra-movil" id="barra-movil" data-visible="no">
-  <a class="boton boton-acento" href="https://apps.apple.com/app/voice-shopping-list/id6505125372" target="_blank" rel="noopener">App Store</a>
-  <a class="boton boton-sec" href="https://play.google.com/store/apps/details?id=com.lwebch.VoiceList" target="_blank" rel="noopener">Google Play</a>
+  <a class="barra-tienda" data-tienda="ios"
+     href="https://apps.apple.com/app/voice-shopping-list/id6505125372"
+     target="_blank" rel="noopener">
+    <img src="/img/apple.webp" alt="{{downloadIOS}} — App Store" width="180" height="50">
+  </a>
+  <a class="barra-tienda" data-tienda="android"
+     href="https://play.google.com/store/apps/details?id=com.lwebch.VoiceList"
+     target="_blank" rel="noopener">
+    <img src="/img/google.webp" alt="{{downloadFree}} — Google Play" width="180" height="50">
+  </a>
 </div>
 
 {{> pie}}

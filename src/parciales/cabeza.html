@@ -32,6 +32,11 @@
   <link rel="stylesheet" href="/estilo.css">
   <link rel="preload" as="image" href="/img/cartel-hero.jpg" fetchpriority="high">
 
+  <!-- Vercel Analytics. En un sitio estático no hace falta el paquete de npm:
+       Vercel sirve este script desde el propio dominio. Es sin cookies, así
+       que no necesita banner de consentimiento. -->
+  <script defer src="/_vercel/insights/script.js"></script>
+
   <!-- Aplica el tema guardado antes del primer pintado, para evitar el parpadeo. -->
   <script>
     try {

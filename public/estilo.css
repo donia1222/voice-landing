@@ -1,26 +1,30 @@
 /* ==========================================================================
    BuyVoice — hoja de estilo única
-   Acento: el punto rojo de grabación. Verde solo para lo confirmado.
+   Acento: el violeta del icono de la app. Fondos crema y salvia, tomados
+   del degradado de la propia app. Verde solo para lo confirmado.
    ========================================================================== */
 
 :root {
   color-scheme: light dark;
 
   /* --- color -------------------------------------------------------- */
-  --ink:        #14181c;
-  --ink-2:      #3d4650;
-  --muted:      #6b7580;
-  --rule:       #e3e0da;
-  --paper:      #faf9f7;
+  --ink:        #1b2018;
+  --ink-2:      #46503f;
+  --muted:      #737d6c;
+  --rule:       #e2e4d2;
+  --paper:      #faf8ec;   /* crema de la app */
   --surface:    #ffffff;
-  --surface-2:  #f2f0ec;
+  --surface-2:  #eef2df;   /* salvia de la app */
 
-  --rec:        #d8402f;   /* punto de grabación — el único acento fuerte */
-  --rec-ink:    #b32e1f;   /* misma familia, contraste AA sobre claro */
-  --rec-soft:   #fceeec;
+  /* Violeta de la marca, tomado del icono. Dos tonos porque el claro no
+     llega a 4.5:1 sobre fondo claro: el vivo es decorativo, el profundo
+     es el que puede llevar o recibir texto. */
+  --acento:      #7c6ef5;
+  --acento-ink:  #5b4bd8;
+  --acento-soft: #f3eefd;
 
-  --done:       #0f6e4c;   /* marcado, incluido, hecho */
-  --done-soft:  #e6f2ed;
+  --done:       #2f7d4f;   /* marcado, incluido, hecho */
+  --done-soft:  #e7f2e6;
 
   /* --- tipografía --------------------------------------------------- */
   --sans: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -45,35 +49,35 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --ink:       #e9ecea;
-    --ink-2:     #b4bdc3;
-    --muted:     #8b959d;
-    --rule:      #2b3238;
-    --paper:     #0e1113;
-    --surface:   #171b1e;
-    --surface-2: #1e2327;
+    --ink:       #eaeae4;
+    --ink-2:     #b8bdb0;
+    --muted:     #8d9386;
+    --rule:      #2e3230;
+    --paper:     #101210;
+    --surface:   #191c19;
+    --surface-2: #202420;
 
-    --rec:       #ff6f60;
-    --rec-ink:   #ff8577;
-    --rec-soft:  #2c1a17;
+    --acento:      #a08ffb;
+    --acento-ink:  #b6a8ff;
+    --acento-soft: #221c33;
 
-    --done:      #3cc191;
-    --done-soft: #10241d;
+    --done:      #5cc47f;
+    --done-soft: #14251a;
   }
 }
 
 /* El interruptor de tema del usuario gana sobre la preferencia del sistema. */
 :root[data-theme="dark"] {
-  --ink:#e9ecea; --ink-2:#b4bdc3; --muted:#8b959d; --rule:#2b3238;
-  --paper:#0e1113; --surface:#171b1e; --surface-2:#1e2327;
-  --rec:#ff6f60; --rec-ink:#ff8577; --rec-soft:#2c1a17;
-  --done:#3cc191; --done-soft:#10241d;
+  --ink:#eaeae4; --ink-2:#b8bdb0; --muted:#8d9386; --rule:#2e3230;
+  --paper:#101210; --surface:#191c19; --surface-2:#202420;
+  --acento:#a08ffb; --acento-ink:#b6a8ff; --acento-soft:#221c33;
+  --done:#5cc47f; --done-soft:#14251a;
 }
 :root[data-theme="light"] {
-  --ink:#14181c; --ink-2:#3d4650; --muted:#6b7580; --rule:#e3e0da;
-  --paper:#faf9f7; --surface:#ffffff; --surface-2:#f2f0ec;
-  --rec:#d8402f; --rec-ink:#b32e1f; --rec-soft:#fceeec;
-  --done:#0f6e4c; --done-soft:#e6f2ed;
+  --ink:#1b2018; --ink-2:#46503f; --muted:#737d6c; --rule:#e2e4d2;
+  --paper:#faf8ec; --surface:#ffffff; --surface-2:#eef2df;
+  --acento:#7c6ef5; --acento-ink:#5b4bd8; --acento-soft:#f3eefd;
+  --done:#2f7d4f; --done-soft:#e7f2e6;
 }
 
 /* --------------------------------------------------------------- base --- */
@@ -108,7 +112,7 @@ p  { margin: 0; text-wrap: pretty; }
 
 a { color: inherit; }
 a:focus-visible, button:focus-visible, summary:focus-visible {
-  outline: 2px solid var(--rec);
+  outline: 2px solid var(--acento);
   outline-offset: 3px;
   border-radius: 4px;
 }
@@ -130,12 +134,12 @@ section { padding-block: var(--seccion); }
   gap: 0.5rem;
 }
 
-.punto-rec {
+.punto {
   width: 0.5rem; height: 0.5rem; border-radius: 50%;
-  background: var(--rec); flex: none;
+  background: var(--acento); flex: none;
 }
 @media (prefers-reduced-motion: no-preference) {
-  .punto-rec { animation: latido 2.4s ease-in-out infinite; }
+  .punto { animation: latido 2.4s ease-in-out infinite; }
   @keyframes latido { 0%,100% { opacity:1 } 50% { opacity:.3 } }
 }
 
@@ -191,7 +195,7 @@ section { padding-block: var(--seccion); }
   font-size: var(--t-sm); text-decoration: none; color: var(--ink-2);
 }
 .lang-opt:hover { background: var(--surface-2); color: var(--ink); }
-.lang-opt.is-activa { color: var(--rec); font-weight: 600; }
+.lang-opt.is-activa { color: var(--acento-ink); font-weight: 600; }
 
 .tema {
   background: none; border: 0; cursor: pointer; color: var(--ink-2);
@@ -219,8 +223,8 @@ section { padding-block: var(--seccion); }
   transition: transform .12s ease, background-color .15s, border-color .15s;
 }
 .boton:active { transform: translateY(1px); }
-.boton-rec  { background: var(--rec); color: #fff; }
-.boton-rec:hover { background: var(--rec-ink); }
+.boton-acento  { background: var(--acento-ink); color: #fff; }
+.boton-acento:hover { background: var(--acento); }
 .boton-sec  { background: var(--surface); color: var(--ink); border-color: var(--rule); }
 .boton-sec:hover { border-color: var(--muted); }
 
@@ -239,7 +243,7 @@ section { padding-block: var(--seccion); }
   padding-bottom: clamp(4.5rem, 8vw, 7rem);
 }
 .hero h1 { margin-bottom: 1.1rem; }
-.hero h1 .acento { color: var(--rec); }
+.hero h1 .acento { color: var(--acento-ink); }
 .hero .entradilla { max-width: 34rem; margin-bottom: 2rem; }
 .hero .tiendas { margin-bottom: 1rem; }
 .hero-nota { font-size: var(--t-xs); color: var(--muted); }
@@ -289,7 +293,7 @@ section { padding-block: var(--seccion); }
   padding: 1.15rem 1.4rem;
   background: rgb(16 19 21 / 0.92);
   backdrop-filter: blur(10px);
-  border-top: 2px solid var(--rec);
+  border-top: 2px solid var(--acento);
   color: #fff;
   font-size: clamp(1.15rem, 0.7rem + 1.9vw, 1.75rem);
   font-weight: 700; letter-spacing: -0.025em; line-height: 1.25;
@@ -315,7 +319,7 @@ section { padding-block: var(--seccion); }
   cursor: pointer; padding-inline-start: 4px;
   transition: opacity .2s, transform .15s, background-color .2s;
 }
-.video-play:hover { background: var(--rec); border-color: transparent; transform: scale(1.06); }
+.video-play:hover { background: var(--acento); border-color: transparent; transform: scale(1.06); }
 .video-marco[data-reproduciendo="si"] .video-play { opacity: 0; pointer-events: none; }
 
 .video-sonido {
@@ -339,9 +343,9 @@ section { padding-block: var(--seccion); }
   display: flex; flex-direction: column; gap: 0.6rem;
 }
 /* Las dos funciones que venden la app ocupan el doble y llevan el acento. */
-.funcion.destacada { background: var(--rec-soft); border-color: transparent; }
+.funcion.destacada { background: var(--acento-soft); border-color: transparent; }
 @media (min-width: 52rem) { .funcion.destacada { grid-column: span 2; } }
-.funcion.destacada .funcion-icono { background: var(--rec); color: #fff; }
+.funcion.destacada .funcion-icono { background: var(--acento-ink); color: #fff; }
 
 .funcion-icono {
   width: 2.5rem; height: 2.5rem; border-radius: 9px;
@@ -366,7 +370,7 @@ section { padding-block: var(--seccion); }
           mask-image: linear-gradient(to right, transparent, #000 5%, #000 95%, transparent);
 }
 .tira::-webkit-scrollbar { display: none; }
-.tira:focus-visible { outline: 2px solid var(--rec); outline-offset: 4px; }
+.tira:focus-visible { outline: 2px solid var(--acento); outline-offset: 4px; }
 
 .tira-pista {
   display: flex;
@@ -416,10 +420,10 @@ section { padding-block: var(--seccion); }
   border-radius: var(--radio); padding: 1.9rem;
   display: flex; flex-direction: column; gap: 1rem;
 }
-.plan.recomendado { border-color: var(--rec); position: relative; }
+.plan.recomendado { border-color: var(--acento); position: relative; }
 .plan-cinta {
   position: absolute; top: -0.7rem; inset-inline-start: 1.7rem;
-  background: var(--rec); color: #fff;
+  background: var(--acento-ink); color: #fff;
   font-family: var(--mono); font-size: var(--t-xs); letter-spacing: .1em;
   text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 5px;
 }
@@ -504,7 +508,7 @@ section { padding-block: var(--seccion); }
 .prosa p { margin-bottom: 1rem; }
 .prosa ul { padding-inline-start: 1.2rem; margin-bottom: 1rem; }
 .prosa li { margin-bottom: 0.4rem; }
-.prosa a { color: var(--rec); }
+.prosa a { color: var(--acento-ink); }
 
 /* ------------------------------------------------------------ formulario */
 
@@ -517,7 +521,7 @@ section { padding-block: var(--seccion); }
 }
 .campo textarea { min-height: 9rem; resize: vertical; }
 .campo input:focus, .campo textarea:focus, .campo select:focus {
-  outline: 2px solid var(--rec); outline-offset: 1px; border-color: transparent;
+  outline: 2px solid var(--acento); outline-offset: 1px; border-color: transparent;
 }
 
 /* ------------------------------------------------------------- utilidad */

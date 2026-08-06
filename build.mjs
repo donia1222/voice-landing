@@ -15,7 +15,13 @@ const SRC = join(raiz, 'src')
 const DIST = join(raiz, 'dist')
 const CONTENIDO = join(SRC, 'contenido')
 
-const SITIO = 'https://buyvoice.app'
+/**
+ * Dominio canónico. Tiene que ser EXACTAMENTE el que sirve Vercel: hoy el
+ * principal es www y el ápice redirige con un 308. Si algún día se invierte
+ * en Vercel, hay que cambiarlo aquí también, o los canonical apuntarán a una
+ * URL que redirige.
+ */
+const SITIO = process.env.SITIO ?? 'https://www.buyvoice.app'
 
 /** Idioma en la raíz del dominio. El resto cuelga de /es/, /de/, ... */
 const PRINCIPAL = 'en'

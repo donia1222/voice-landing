@@ -17,6 +17,10 @@
       "a": "Yes. Lists can be shared with family and friends so everyone sees the same list and it stays in sync while you shop."
     },
     {
+      "q": "Can I plan a shop for a specific day?",
+      "a": "Yes. The shopping calendar lets you attach a list to a date and sends you a reminder when the day arrives, so the weekly shop stops living in your head."
+    },
+    {
       "q": "Can I turn a handwritten list into a digital one?",
       "a": "Yes. Take a photo of a paper list and BuyVoice digitises it instantly. This is a Premium feature."
     },
@@ -25,7 +29,6 @@
       "a": "BuyVoice estimates what your list will cost in a given city — Zurich, New York and others — so you can plan your budget before you go. This is a Premium feature."
     }
   ],
-
   "es": [
     {
       "q": "¿Cómo creo una lista de la compra por voz?",
@@ -44,6 +47,10 @@
       "a": "Sí. Las listas se pueden compartir con familia y amigos, de forma que todos ven la misma lista y se mantiene sincronizada mientras compráis."
     },
     {
+      "q": "¿Puedo planificar una compra para un día concreto?",
+      "a": "Sí. El calendario de compras te permite asociar una lista a una fecha y te avisa cuando llega el día, para que la compra semanal deje de estar solo en tu cabeza."
+    },
+    {
       "q": "¿Puedo pasar una lista escrita a mano al móvil?",
       "a": "Sí. Haz una foto de la lista en papel y BuyVoice la digitaliza al instante. Es una función Premium."
     },
@@ -52,7 +59,6 @@
       "a": "BuyVoice calcula cuánto costará tu lista en una ciudad concreta —Zúrich, Nueva York y otras— para que puedas planificar el presupuesto antes de salir. Es una función Premium."
     }
   ],
-
   "de": [
     {
       "q": "Wie erstelle ich eine Einkaufsliste per Sprache?",
@@ -71,6 +77,10 @@
       "a": "Ja. Listen lassen sich mit Familie und Freunden teilen, sodass alle dieselbe Liste sehen und sie beim Einkaufen synchron bleibt."
     },
     {
+      "q": "Kann ich einen Einkauf für einen bestimmten Tag planen?",
+      "a": "Ja. Im Einkaufskalender hängst du eine Liste an ein Datum und wirst am betreffenden Tag erinnert — so lebt der Wocheneinkauf nicht mehr nur in deinem Kopf."
+    },
+    {
       "q": "Kann ich eine handgeschriebene Liste digitalisieren?",
       "a": "Ja. Fotografiere die Liste auf Papier und BuyVoice digitalisiert sie sofort. Das ist eine Premium-Funktion."
     },
@@ -79,7 +89,6 @@
       "a": "BuyVoice schätzt, was deine Liste in einer bestimmten Stadt kostet — Zürich, New York und weitere — damit du dein Budget vorher planen kannst. Das ist eine Premium-Funktion."
     }
   ],
-
   "fr": [
     {
       "q": "Comment créer une liste de courses à la voix ?",
@@ -98,6 +107,10 @@
       "a": "Oui. Les listes se partagent avec la famille et les amis : tout le monde voit la même liste et elle reste synchronisée pendant les courses."
     },
     {
+      "q": "Puis-je planifier des courses pour un jour précis ?",
+      "a": "Oui. Le calendrier de courses permet d'associer une liste à une date et vous envoie un rappel le jour venu, pour que les courses de la semaine ne reposent plus sur votre mémoire."
+    },
+    {
       "q": "Puis-je numériser une liste écrite à la main ?",
       "a": "Oui. Prenez une photo de la liste papier et BuyVoice la numérise instantanément. C'est une fonction Premium."
     },
@@ -106,7 +119,6 @@
       "a": "BuyVoice estime ce que coûtera votre liste dans une ville donnée — Zurich, New York et d'autres — pour planifier votre budget avant de partir. C'est une fonction Premium."
     }
   ],
-
   "it": [
     {
       "q": "Come creo una lista della spesa con la voce?",
@@ -131,6 +143,10 @@
     {
       "q": "Come funzionano le stime dei prezzi?",
       "a": "BuyVoice stima quanto costerà la tua lista in una città specifica — Zurigo, New York e altre — così puoi pianificare il budget prima di uscire. È una funzione Premium."
+    },
+    {
+      "q": "Posso pianificare la spesa per un giorno preciso?",
+      "a": "Sì. Il calendario della spesa permette di associare una lista a una data e ti avvisa quando arriva il giorno, così la spesa settimanale non resta solo nella tua testa."
     }
   ]
 }

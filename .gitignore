@@ -1,0 +1,23 @@
+# salida del generador: se reconstruye con `node build.mjs`
+dist/
+
+# originales pesados de vídeo e imagen (25 MB) — no van al repo
+fuentes/
+
+# traducciones aparcadas hasta que se completen
+_pendientes/
+
+# macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# editores
+.vscode/
+.idea/
+*.swp
+
+# por si algún día entra alguna dependencia
+node_modules/
+.vercel

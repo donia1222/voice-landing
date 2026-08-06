@@ -65,5 +65,7 @@
   "availableLanguages": "Disponible en 13 Langues",
   "globalSupportDesc": "BuyVoice parle votre langue ! Notre application est entièrement traduite et optimisée pour les utilisateurs du monde entier.",
   "autoDetected": "Détection automatique : Nous détectons automatiquement la langue de votre navigateur et affichons BuyVoice dans votre langue préférée.",
-  "currentlyViewing": "Actuellement affiché en :"
+  "currentlyViewing": "Actuellement affiché en :",
+  "shoppingCalendar": "Calendrier de courses",
+  "shoppingCalendarDesc": "Placez une liste à une date et recevez un rappel le jour venu. Planifiez la semaine au lieu de tout faire de mémoire."
 }

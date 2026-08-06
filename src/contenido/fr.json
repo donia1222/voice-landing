@@ -67,5 +67,7 @@
   "autoDetected": "Détection automatique : Nous détectons automatiquement la langue de votre navigateur et affichons BuyVoice dans votre langue préférée.",
   "currentlyViewing": "Actuellement affiché en :",
   "shoppingCalendar": "Calendrier de courses",
-  "shoppingCalendarDesc": "Placez une liste à une date et recevez un rappel le jour venu. Planifiez la semaine au lieu de tout faire de mémoire."
+  "shoppingCalendarDesc": "Placez une liste à une date et recevez un rappel le jour venu. Planifiez la semaine au lieu de tout faire de mémoire.",
+  "barraCta": "Obtenir",
+  "barraNota": "Gratuit · Sans publicité"
 }

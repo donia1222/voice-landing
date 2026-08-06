@@ -6,7 +6,11 @@
  * su hreflang y su sitemap. Sin dependencias: solo `node build.mjs`.
  */
 
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, cpSync, existsSync } from 'node:fs'
+import {
+  readFileSync, writeFileSync, readdirSync, mkdirSync, rmSync, cpSync, existsSync,
+  renameSync,
+} from 'node:fs'
+import { createHash } from 'node:crypto'
 import { join, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -386,10 +390,70 @@ if (existsSync(join(raiz, 'public'))) {
   cpSync(join(raiz, 'public'), DIST, { recursive: true })
 }
 
+// ------------------------------------------------------------ huella digital
+/**
+ * Renombra los recursos con un hash de su contenido y reescribe las
+ * referencias. Así se pueden cachear un año: si el archivo cambia, cambia el
+ * nombre, y el navegador está obligado a pedirlo. Sin esto hay que elegir
+ * entre caché larga (y ver la versión vieja) o caché corta (y ir lento).
+ */
+function huella() {
+  const archivos = []
+  const recorrer = (dir) => {
+    for (const e of readdirSync(dir, { withFileTypes: true })) {
+      const ruta = join(dir, e.name)
+      if (e.isDirectory()) recorrer(ruta)
+      else archivos.push(ruta)
+    }
+  }
+  recorrer(DIST)
+
+  const versionable = (f) =>
+    /\.(css|js|webp|png|jpg|jpeg|svg|mp4|webm)$/i.test(f) &&
+    !/google[0-9a-f]+\.html$/i.test(f)
+
+  const mapa = new Map()
+  for (const abs of archivos.filter(versionable)) {
+    const datos = readFileSync(abs)
+    const hash = createHash('sha256').update(datos).digest('hex').slice(0, 8)
+    const punto = abs.lastIndexOf('.')
+    const nuevo = `${abs.slice(0, punto)}.${hash}${abs.slice(punto)}`
+    renameSync(abs, nuevo)
+    // La clave es la ruta pública, tal cual aparece en el HTML.
+    mapa.set('/' + abs.slice(DIST.length + 1), '/' + nuevo.slice(DIST.length + 1))
+  }
+
+  // Las rutas más largas primero: si no, "/img/icono.png" podría alterar
+  // una coincidencia parcial de otra más específica.
+  const claves = [...mapa.keys()].sort((a, b) => b.length - a.length)
+
+  for (const abs of archivos) {
+    if (!/\.(html|css|json|xml)$/i.test(abs)) continue
+    const real = existsSync(abs) ? abs : mapa.get('/' + abs.slice(DIST.length + 1))
+      ? join(DIST, mapa.get('/' + abs.slice(DIST.length + 1)).slice(1))
+      : null
+    if (!real || !existsSync(real)) continue
+
+    let texto = readFileSync(real, 'utf8')
+    let tocado = false
+    for (const k of claves) {
+      if (texto.includes(k)) {
+        texto = texto.split(k).join(mapa.get(k))
+        tocado = true
+      }
+    }
+    if (tocado) writeFileSync(real, texto)
+  }
+
+  return mapa.size
+}
+
+const versionados = huella()
+
 // ---------------------------------------------------------------- resumen
 
 console.log(`\n  ${escritas} páginas · ${idiomas.length} idiomas (${idiomas.join(', ')})`)
-console.log(`  sitemap: ${entradas.length} URLs`)
+console.log(`  sitemap: ${entradas.length} URLs · ${versionados} recursos con huella`)
 
 if (avisos.length) {
   const unicos = [...new Set(avisos)]

@@ -317,20 +317,21 @@
 </main>
 
 <!-- barra fija de descarga en móvil, aparece al pasar el hero -->
-<!-- Salen las dos tiendas por defecto; app.js oculta la que no toca según el
-     dispositivo. Sin JS se ven ambas, que es lo correcto. -->
-<div class="barra-movil" id="barra-movil" data-visible="no">
-  <a class="barra-tienda" data-tienda="ios"
+<!-- Tarjeta flotante de descarga en móvil. El enlace apunta a App Store por
+     defecto y app.js lo cambia a Google Play en Android: así, sin JS, sigue
+     llevando a una tienda válida. -->
+<aside class="barra-movil" id="barra-movil" data-visible="no">
+  <a class="barra-tarjeta" id="barra-enlace"
      href="https://apps.apple.com/app/voice-shopping-list/id6505125372"
      target="_blank" rel="noopener">
-    <img src="/img/apple.webp" alt="{{downloadIOS}} — App Store" width="180" height="50">
+    <img class="barra-icono" src="/img/icono.png" alt="" width="52" height="52">
+    <span class="barra-texto">
+      <strong>BuyVoice</strong>
+      <small>{{barraNota}}</small>
+    </span>
+    <span class="barra-cta">{{barraCta}}</span>
   </a>
-  <a class="barra-tienda" data-tienda="android"
-     href="https://play.google.com/store/apps/details?id=com.lwebch.VoiceList"
-     target="_blank" rel="noopener">
-    <img src="/img/google.webp" alt="{{downloadFree}} — Google Play" width="180" height="50">
-  </a>
-</div>
+</aside>
 
 {{> pie}}
 

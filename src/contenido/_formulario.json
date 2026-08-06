@@ -1,0 +1,52 @@
+{
+  "en": {
+    "intro": "Questions, bug reports or ideas for new features — write to us and we answer.",
+    "nombre": "Your name",
+    "email": "Your email",
+    "asunto": "Subject",
+    "mensaje": "Message",
+    "enviar": "Send message",
+    "nota": "This opens your email app with the message ready to send. Nothing is stored on this website.",
+    "directo": "Or write directly to"
+  },
+  "es": {
+    "intro": "Dudas, fallos o ideas para nuevas funciones: escríbenos y te respondemos.",
+    "nombre": "Tu nombre",
+    "email": "Tu correo",
+    "asunto": "Asunto",
+    "mensaje": "Mensaje",
+    "enviar": "Enviar mensaje",
+    "nota": "Esto abre tu aplicación de correo con el mensaje listo para enviar. En esta web no se guarda nada.",
+    "directo": "O escribe directamente a"
+  },
+  "de": {
+    "intro": "Fragen, Fehler oder Ideen für neue Funktionen — schreib uns, wir antworten.",
+    "nombre": "Dein Name",
+    "email": "Deine E-Mail",
+    "asunto": "Betreff",
+    "mensaje": "Nachricht",
+    "enviar": "Nachricht senden",
+    "nota": "Damit öffnet sich dein E-Mail-Programm mit der fertigen Nachricht. Auf dieser Website wird nichts gespeichert.",
+    "directo": "Oder schreib direkt an"
+  },
+  "fr": {
+    "intro": "Questions, bugs ou idées de nouvelles fonctions : écrivez-nous, nous répondons.",
+    "nombre": "Votre nom",
+    "email": "Votre e-mail",
+    "asunto": "Objet",
+    "mensaje": "Message",
+    "enviar": "Envoyer le message",
+    "nota": "Cela ouvre votre application de messagerie avec le message prêt à envoyer. Rien n'est enregistré sur ce site.",
+    "directo": "Ou écrivez directement à"
+  },
+  "it": {
+    "intro": "Domande, errori o idee per nuove funzioni: scrivici e ti rispondiamo.",
+    "nombre": "Il tuo nome",
+    "email": "La tua email",
+    "asunto": "Oggetto",
+    "mensaje": "Messaggio",
+    "enviar": "Invia messaggio",
+    "nota": "Si aprirà la tua app di posta con il messaggio pronto da inviare. Su questo sito non viene salvato nulla.",
+    "directo": "Oppure scrivi direttamente a"
+  }
+}

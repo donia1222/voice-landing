@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+{{> cabeza}}
+  {{{datosEstructurados}}}
+</head>
+<body>
+
+{{> cabecera}}
+
+<main>
+  <section>
+    <div class="contenedor">
+      <div class="centrado">
+        <p class="etiqueta"><span class="punto-rec"></span>{{support}}</p>
+        <h1 style="font-size:var(--t-2xl);margin:1rem 0 .9rem">{{s.titular}}</h1>
+        <p class="entradilla">{{s.intro}}</p>
+      </div>
+
+      <div class="rejilla-funciones" style="max-width:58rem;margin-inline:auto">
+
+        <article class="funcion">
+          <span class="funcion-icono">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M9.2 9a2.9 2.9 0 0 1 5.6 1c0 2-2.8 2.5-2.8 2.5"/>
+              <path d="M12 17h.01"/>
+            </svg>
+          </span>
+          <h2 style="font-size:var(--t-lg)">{{s.b1t}}</h2>
+          <p>{{s.b1d}}</p>
+          <a href="{{inicio}}#faq" class="boton boton-sec" style="margin-top:auto;align-self:flex-start">{{s.b1a}}</a>
+        </article>
+
+        <article class="funcion">
+          <span class="funcion-icono">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/>
+              <path d="m3 7 9 6 9-6"/>
+            </svg>
+          </span>
+          <h2 style="font-size:var(--t-lg)">{{s.b2t}}</h2>
+          <p>{{s.b2d}}</p>
+          <a href="{{contacto}}" class="boton boton-rec" style="margin-top:auto;align-self:flex-start">{{s.b2a}}</a>
+        </article>
+
+        <article class="funcion">
+          <span class="funcion-icono">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3.5 6.5h17l-1.5 12a2 2 0 0 1-2 1.8H7a2 2 0 0 1-2-1.8z"/>
+              <path d="M8.5 6.5a3.5 3.5 0 0 1 7 0"/>
+            </svg>
+          </span>
+          <h2 style="font-size:var(--t-lg)">{{s.b3t}}</h2>
+          <p>{{s.b3d}}</p>
+          <a href="https://apps.apple.com/app/voice-shopping-list/id6505125372" target="_blank" rel="noopener" class="boton boton-sec" style="margin-top:auto;align-self:flex-start">{{s.b3a}}</a>
+        </article>
+
+      </div>
+
+      <div class="centrado" style="margin-top:3.5rem">
+        <p style="color:var(--muted);font-size:var(--t-sm)">
+          {{f.directo}} <a href="mailto:info@lweb.ch" style="color:var(--rec)">info@lweb.ch</a>
+        </p>
+      </div>
+    </div>
+  </section>
+</main>
+
+{{> pie}}
+
+</body>
+</html>

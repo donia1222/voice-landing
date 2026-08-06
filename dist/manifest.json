@@ -1,0 +1,21 @@
+{
+  "name": "BuyVoice - Voice Shopping Lists",
+  "short_name": "BuyVoice",
+  "description": "Create shopping lists by voice with BuyVoice. Smart AI-powered shopping assistant.",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/images/app-icon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["lifestyle", "shopping", "productivity"],
+  "lang": "en",
+  "scope": "/",
+  "orientation": "portrait"
+}

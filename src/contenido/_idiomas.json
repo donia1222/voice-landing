@@ -1,0 +1,67 @@
+{
+  "en": {
+    "flag": "🇺🇸",
+    "name": "English",
+    "code": "EN"
+  },
+  "es": {
+    "flag": "🇪🇸",
+    "name": "Español",
+    "code": "ES"
+  },
+  "de": {
+    "flag": "🇩🇪",
+    "name": "Deutsch",
+    "code": "DE"
+  },
+  "it": {
+    "flag": "🇮🇹",
+    "name": "Italiano",
+    "code": "IT"
+  },
+  "fr": {
+    "flag": "🇫🇷",
+    "name": "Français",
+    "code": "FR"
+  },
+  "tr": {
+    "flag": "🇹🇷",
+    "name": "Türkçe",
+    "code": "TR"
+  },
+  "pt": {
+    "flag": "🇵🇹",
+    "name": "Português",
+    "code": "PT"
+  },
+  "ru": {
+    "flag": "🇷🇺",
+    "name": "Русский",
+    "code": "RU"
+  },
+  "ar": {
+    "flag": "🇸🇦",
+    "name": "العربية",
+    "code": "AR"
+  },
+  "hu": {
+    "flag": "🇭🇺",
+    "name": "Magyar",
+    "code": "HU"
+  },
+  "ja": {
+    "flag": "🇯🇵",
+    "name": "日本語",
+    "code": "JA"
+  },
+  "hi": {
+    "flag": "🇮🇳",
+    "name": "हिंदी",
+    "code": "HI"
+  },
+  "nl": {
+    "flag": "🇳🇱",
+    "name": "Nederlands",
+    "code": "NL"
+  }
+}

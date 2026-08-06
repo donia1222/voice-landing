@@ -1,0 +1,116 @@
+{
+  "en": {
+    "index": {
+      "title": "BuyVoice — Create Shopping Lists by Voice",
+      "description": "Say what you need and BuyVoice writes your shopping list for you. Voice recognition, shared lists and price estimates by city. Free on iOS and Android."
+    },
+    "support": {
+      "title": "Support & Help — BuyVoice",
+      "description": "Answers to the most common questions about BuyVoice: voice recognition, sharing lists, premium features and account issues."
+    },
+    "contact": {
+      "title": "Contact — BuyVoice",
+      "description": "Get in touch with the BuyVoice team. We answer questions, bug reports and feature requests."
+    },
+    "privacy-policy": {
+      "title": "Privacy Policy — BuyVoice",
+      "description": "How BuyVoice collects, uses and protects your data, including how voice recordings are handled."
+    },
+    "terms-of-service": {
+      "title": "Terms of Service — BuyVoice",
+      "description": "The terms that govern your use of the BuyVoice app and website."
+    }
+  },
+
+  "es": {
+    "index": {
+      "title": "Crea listas de la compra por voz — BuyVoice",
+      "description": "Di en voz alta lo que necesitas y BuyVoice escribe tu lista de compras sola. Reconocimiento de voz, listas compartidas y precios estimados por ciudad. Gratis en iOS y Android."
+    },
+    "support": {
+      "title": "Ayuda y soporte — BuyVoice",
+      "description": "Respuestas a las dudas más frecuentes sobre BuyVoice: reconocimiento de voz, compartir listas, funciones premium y problemas con la cuenta."
+    },
+    "contact": {
+      "title": "Contacto — BuyVoice",
+      "description": "Escribe al equipo de BuyVoice. Respondemos dudas, fallos y sugerencias de nuevas funciones."
+    },
+    "privacy-policy": {
+      "title": "Política de privacidad — BuyVoice",
+      "description": "Cómo BuyVoice recoge, usa y protege tus datos, incluido el tratamiento de las grabaciones de voz."
+    },
+    "terms-of-service": {
+      "title": "Términos del servicio — BuyVoice",
+      "description": "Las condiciones que regulan el uso de la aplicación y la web de BuyVoice."
+    }
+  },
+
+  "de": {
+    "index": {
+      "title": "Einkaufslisten per Sprache erstellen — BuyVoice",
+      "description": "Sag einfach, was du brauchst — BuyVoice schreibt deine Einkaufsliste. Spracherkennung, geteilte Listen und Preisschätzungen pro Stadt. Gratis für iOS und Android."
+    },
+    "support": {
+      "title": "Hilfe & Support — BuyVoice",
+      "description": "Antworten auf die häufigsten Fragen zu BuyVoice: Spracherkennung, Listen teilen, Premium-Funktionen und Kontoprobleme."
+    },
+    "contact": {
+      "title": "Kontakt — BuyVoice",
+      "description": "Schreib dem BuyVoice-Team. Wir beantworten Fragen, Fehlermeldungen und Wünsche für neue Funktionen."
+    },
+    "privacy-policy": {
+      "title": "Datenschutzerklärung — BuyVoice",
+      "description": "Wie BuyVoice deine Daten erhebt, verwendet und schützt — einschliesslich der Verarbeitung von Sprachaufnahmen."
+    },
+    "terms-of-service": {
+      "title": "Nutzungsbedingungen — BuyVoice",
+      "description": "Die Bedingungen für die Nutzung der BuyVoice-App und -Website."
+    }
+  },
+
+  "fr": {
+    "index": {
+      "title": "Créez vos listes de courses à la voix — BuyVoice",
+      "description": "Dites ce dont vous avez besoin, BuyVoice écrit votre liste de courses. Reconnaissance vocale, listes partagées et estimation des prix par ville. Gratuit sur iOS et Android."
+    },
+    "support": {
+      "title": "Aide et support — BuyVoice",
+      "description": "Réponses aux questions les plus fréquentes sur BuyVoice : reconnaissance vocale, partage de listes, fonctions premium et problèmes de compte."
+    },
+    "contact": {
+      "title": "Contact — BuyVoice",
+      "description": "Écrivez à l'équipe BuyVoice. Nous répondons aux questions, aux bugs et aux suggestions de nouvelles fonctions."
+    },
+    "privacy-policy": {
+      "title": "Politique de confidentialité — BuyVoice",
+      "description": "Comment BuyVoice collecte, utilise et protège vos données, y compris le traitement des enregistrements vocaux."
+    },
+    "terms-of-service": {
+      "title": "Conditions d'utilisation — BuyVoice",
+      "description": "Les conditions qui régissent l'utilisation de l'application et du site BuyVoice."
+    }
+  },
+
+  "it": {
+    "index": {
+      "title": "Crea liste della spesa con la voce — BuyVoice",
+      "description": "Di' ad alta voce cosa ti serve e BuyVoice scrive la lista della spesa per te. Riconoscimento vocale, liste condivise e stime dei prezzi per città. Gratis su iOS e Android."
+    },
+    "support": {
+      "title": "Assistenza e supporto — BuyVoice",
+      "description": "Risposte alle domande più frequenti su BuyVoice: riconoscimento vocale, condivisione delle liste, funzioni premium e problemi con l'account."
+    },
+    "contact": {
+      "title": "Contatti — BuyVoice",
+      "description": "Scrivi al team di BuyVoice. Rispondiamo a domande, segnalazioni di errori e richieste di nuove funzioni."
+    },
+    "privacy-policy": {
+      "title": "Informativa sulla privacy — BuyVoice",
+      "description": "Come BuyVoice raccoglie, utilizza e protegge i tuoi dati, incluso il trattamento delle registrazioni vocali."
+    },
+    "terms-of-service": {
+      "title": "Termini di servizio — BuyVoice",
+      "description": "Le condizioni che regolano l'uso dell'app e del sito BuyVoice."
+    }
+  }
+}

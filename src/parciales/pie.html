@@ -1,0 +1,52 @@
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-rejilla">
+      <div>
+        <a class="marca" href="{{inicio}}">
+          <img src="/img/icono.webp" alt="" width="28" height="28">
+          BuyVoice
+        </a>
+        <p style="margin-top:.8rem;font-size:var(--t-sm);color:var(--muted);max-width:20rem">
+          {{heroDescription}}
+        </p>
+      </div>
+
+      <div>
+        <h4>{{features}}</h4>
+        <ul>
+          <li><a href="{{inicio}}#funciones">{{voiceRecognition}}</a></li>
+          <li><a href="{{inicio}}#precios-ciudad">{{priceEstimates}}</a></li>
+          <li><a href="{{inicio}}#precios">{{pricing}}</a></li>
+          <li><a href="{{inicio}}#idiomas">{{availableLanguages}}</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>{{support}}</h4>
+        <ul>
+          <li><a href="{{soporte}}">{{support}}</a></li>
+          <li><a href="{{contacto}}">{{contact}}</a></li>
+          <li><a href="mailto:info@lweb.ch">info@lweb.ch</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>{{downloadIOS}}</h4>
+        <ul>
+          <li><a href="https://apps.apple.com/app/voice-shopping-list/id6505125372" target="_blank" rel="noopener">App Store</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.lwebch.VoiceList" target="_blank" rel="noopener">Google Play</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="pie-legal">
+      <span>&copy; {{anyo}} BuyVoice · lweb.ch</span>
+      <span style="display:flex;gap:1rem;flex-wrap:wrap">
+        <a href="{{privacidad}}">{{privacyPolicy}}</a>
+        <a href="{{terminos}}">{{termsOfService}}</a>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<script src="/app.js" defer></script>

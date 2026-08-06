@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="{{lang}}" dir="{{dir}}">
+<head>
+{{> cabeza}}
+  {{{datosEstructurados}}}
+</head>
+<body>
+
+{{> cabecera}}
+
+<main>
+  <!-- ============================================================ hero -->
+  <section class="hero">
+    <div class="contenedor hero-rejilla">
+
+      <div>
+        <p class="etiqueta"><span class="punto-rec"></span>{{voicePowered}}</p>
+        <h1>{{heroTitle}}<span class="acento">{{heroTitleAccent}}</span></h1>
+        <p class="entradilla">{{heroDescription}}</p>
+
+        <div class="tiendas">
+          <a href="https://apps.apple.com/app/voice-shopping-list/id6505125372" target="_blank" rel="noopener">
+            <img src="/img/apple.webp" alt="{{downloadIOS}} — App Store" width="180" height="50">
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.lwebch.VoiceList" target="_blank" rel="noopener">
+            <img src="/img/google.webp" alt="{{downloadFree}} — Google Play" width="180" height="50">
+          </a>
+        </div>
+        <p class="hero-nota">{{foreverFree}} · {{includesAds}}</p>
+      </div>
+
+      <!-- El vídeo lleva los subtítulos encima, en HTML, para que sirva
+           el mismo archivo en todos los idiomas. -->
+      <figure class="video-marco es-cuadrado hero-video" style="margin:0">
+        <video poster="/img/cartel-hero.jpg" muted playsinline loop preload="metadata">
+          <source src="/video/hero.mp4" type="video/mp4">
+        </video>
+
+        <button class="video-play" type="button" aria-label="Play">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M8 5.2v13.6a.6.6 0 0 0 .92.5l10.6-6.8a.6.6 0 0 0 0-1l-10.6-6.8A.6.6 0 0 0 8 5.2z"/>
+          </svg>
+        </button>
+        <figcaption class="subtitulo" data-visible="no"></figcaption>
+        <script type="application/json" class="cues">{{{subsHero}}}</script>
+      </figure>
+
+    </div>
+  </section>
+  <!-- ======================================================= compartir -->
+  <!-- Vídeo cuadrado: va al lado del texto, no a lo ancho. -->
+  <section id="compartir" style="background:var(--surface-2)">
+    <div class="contenedor compartir-rejilla">
+      <figure class="video-marco es-cuadrado" style="margin:0">
+        <video poster="/img/cartel-compartir.jpg" muted playsinline loop preload="none">
+          <source src="/video/compartir.mp4" type="video/mp4">
+        </video>
+        <button class="video-play" type="button" aria-label="Play">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M8 5.2v13.6a.6.6 0 0 0 .92.5l10.6-6.8a.6.6 0 0 0 0-1l-10.6-6.8A.6.6 0 0 0 8 5.2z"/>
+          </svg>
+        </button>
+        <figcaption class="subtitulo" data-visible="no"></figcaption>
+        <script type="application/json" class="cues">{{{subsCompartir}}}</script>
+      </figure>
+
+      <div>
+        <h2>{{shareCollaborate}}</h2>
+        <p class="entradilla" style="margin-top:1rem">{{shareCollaborateDesc}}</p>
+      </div>
+    </div>
+  </section>
+  <!-- ================================================= precios ciudad -->
+  <!-- Aquí el texto va primero y el vídeo después: alterna con la sección
+       de compartir, que lo tiene al revés. -->
+  <section id="precios-ciudad">
+    <div class="contenedor compartir-rejilla es-invertida">
+      <div>
+        <p class="etiqueta">Zürich · London · New York</p>
+        <h2 style="margin:1rem 0">{{knowPrices}}</h2>
+        <p class="entradilla">{{knowPricesDesc}}</p>
+      </div>
+
+      <figure class="video-marco es-cuadrado" style="margin:0">
+        <video poster="/img/cartel-supermercado.jpg" muted playsinline loop preload="none">
+          <source src="/video/supermercado.mp4" type="video/mp4">
+        </video>
+        <button class="video-play" type="button" aria-label="Play">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M8 5.2v13.6a.6.6 0 0 0 .92.5l10.6-6.8a.6.6 0 0 0 0-1l-10.6-6.8A.6.6 0 0 0 8 5.2z"/>
+          </svg>
+        </button>
+        <figcaption class="subtitulo" data-visible="no"></figcaption>
+        <script type="application/json" class="cues">{{{subsSuper}}}</script>
+      </figure>
+    </div>
+  </section>
+  <!-- ======================================================== capturas -->
+  <section id="capturas">
+    <div class="contenedor">
+      <div class="centrado">
+        <h2>{{g.titulo}}</h2>
+        <p class="entradilla" style="margin-top:.9rem">{{g.intro}}</p>
+      </div>
+    </div>
+
+    <!-- La tira se sale del contenedor a propósito: así se ve que hay más
+         a los lados y se puede arrastrar hasta el borde de la pantalla. -->
+    <div class="tira" role="region" aria-label="{{g.titulo}}" tabindex="0">
+      <div class="tira-pista">
+        {{{g.tomas}}}
+      </div>
+    </div>
+
+    <div class="contenedor centrado">
+      <p class="tira-pista-texto">{{g.pista}}</p>
+    </div>
+  </section>
+  <!-- =========================================================== widget -->
+  <section id="widget">
+    <div class="contenedor centrado">
+      <h2>{{widgetTitle}}</h2>
+      <p class="entradilla" style="margin-top:.9rem">{{widgetDescription}}</p>
+      <!-- Grabación real del widget en la pantalla de inicio. Sin subtítulos:
+           dura tres segundos y se explica sola. -->
+      <figure class="video-marco widget-video" style="margin:2.5rem auto 0">
+        <video poster="/img/cartel-widget.jpg" muted playsinline loop preload="none"
+               aria-label="{{quickAccess}}">
+          <source src="/video/widget.mp4" type="video/mp4">
+        </video>
+        <button class="video-play" type="button" aria-label="Play">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M8 5.2v13.6a.6.6 0 0 0 .92.5l10.6-6.8a.6.6 0 0 0 0-1l-10.6-6.8A.6.6 0 0 0 8 5.2z"/>
+          </svg>
+        </button>
+      </figure>
+      <h3 style="margin-top:2rem">{{quickAccess}}</h3>
+      <p style="margin-top:.5rem;color:var(--ink-2)">{{quickAccessDescription}}</p>
+    </div>
+  </section>
+  <!-- ======================================================= funciones -->
+  <section id="funciones">
+    <div class="contenedor">
+      <div class="centrado">
+        <h2>{{powerfulFeatures}}</h2>
+        <p class="entradilla" style="margin-top:.9rem">{{featuresDescription}}</p>
+      </div>
+
+      <div class="rejilla-funciones">
+
+        <article class="funcion destacada">
+          <span class="funcion-icono">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="2" width="6" height="12" rx="3"/>
+              <path d="M5 10a7 7 0 0 0 14 0M12 17v5"/>
+            </svg>
+          </span>
+          <h3>{{voiceRecognition}}</h3>
+          <p>{{voiceRecognitionDesc}}</p>
+        </article>
+
+        <article class="funcion destacada">
+          <span class="funcion-icono">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 21V10l9-7 9 7v11"/><path d="M7 21v-6h4v6"/>
+              <path d="M15 13h3M15 17h3"/>
+            </svg>
+          </span>
+          <h3>{{priceEstimates}}</h3>
+          <p>{{priceEstimatesDesc}}</p>
+        </article>
+
+        <article class="funcion">
+          <span class="funcion-icono">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M3 8.5A2.5 2.5 0 0 1 5.5 6h1.2a2 2 0 0 0 1.7-1l.5-.8a2 2 0 0 1 1.7-1h2.8a2 2 0 0 1 1.7 1l.5.8a2 2 0 0 0 1.7 1h1.2A2.5 2.5 0 0 1 21 8.5v9A2.5 2.5 0 0 1 18.5 20h-13A2.5 2.5 0 0 1 3 17.5z"/>
+              <circle cx="12" cy="13" r="3.5"/>
+            </svg>
+          </span>
+          <h3>{{photoDigitization}}</h3>
+          <p>{{photoDigitizationDesc}}</p>
+        </article>
+
+        <article class="funcion">
+          <span class="funcion-icono">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M18 8a6 6 0 1 0-12 0c0 6-2 8-2 8h16s-2-2-2-8z"/>
+              <path d="M10.5 20a2 2 0 0 0 3 0"/>
+            </svg>
+          </span>
+          <h3>{{smartNotifications}}</h3>
+          <p>{{smartNotificationsDesc}}</p>
+        </article>
+
+        <article class="funcion">
+          <span class="funcion-icono">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M8 6h13M8 12h13M8 18h13"/>
+              <path d="m3 6 1.2 1.2L6.5 5M3 12l1.2 1.2L6.5 11M3 18l1.2 1.2L6.5 17"/>
+            </svg>
+          </span>
+          <h3>{{listManagement}}</h3>
+          <p>{{listManagementDesc}}</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <!-- ========================================================== precios -->
+  <section id="precios" style="background:var(--surface-2)">
+    <div class="contenedor">
+      <div class="centrado">
+        <h2>{{useAllFeatures}}</h2>
+        <p class="entradilla" style="margin-top:.9rem">{{useAllFeaturesDesc}}</p>
+      </div>
+
+      <div class="planes">
+        <article class="plan">
+          <div>
+            <h3>{{freeVersion}}</h3>
+            <p style="color:var(--muted);font-size:var(--t-sm)">{{freeVersionDesc}}</p>
+          </div>
+          <p class="plan-precio">0 <small>CHF · {{foreverFree}}</small></p>
+          <ul>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 4.5 6 12l-3.5-3.5"/></svg>{{allVoiceFeatures}}</li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 4.5 6 12l-3.5-3.5"/></svg>{{pushNotifications}}</li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 4.5 6 12l-3.5-3.5"/></svg>{{includesAds}}</li>
+          </ul>
+          <a class="boton boton-sec" style="margin-top:auto"
+             href="https://apps.apple.com/app/voice-shopping-list/id6505125372"
+             target="_blank" rel="noopener">{{downloadFree}}</a>
+        </article>
+
+        <article class="plan recomendado">
+          <span class="plan-cinta">{{mostPopular}}</span>
+          <div>
+            <h3>{{premium}}</h3>
+            <p style="color:var(--muted);font-size:var(--t-sm)">{{premiumDesc}}</p>
+          </div>
+          <p class="plan-precio">1.50 <small>CHF · {{perMonth}}</small></p>
+          <ul>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 4.5 6 12l-3.5-3.5"/></svg>{{allFreeFeatures}}</li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 4.5 6 12l-3.5-3.5"/></svg>{{photoDigitization}}</li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 4.5 6 12l-3.5-3.5"/></svg>{{priceEstimates}}</li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 4.5 6 12l-3.5-3.5"/></svg>{{prioritySupport}}</li>
+            <li><svg width="15" height="15" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13.5 4.5 6 12l-3.5-3.5"/></svg>{{earlyAccess}}</li>
+          </ul>
+          <a class="boton boton-rec" style="margin-top:auto"
+             href="https://apps.apple.com/app/voice-shopping-list/id6505125372"
+             target="_blank" rel="noopener">{{subscribeNow}}</a>
+        </article>
+      </div>
+    </div>
+  </section>
+  <!-- ========================================================== idiomas -->
+  <section id="idiomas">
+    <div class="contenedor centrado">
+      <p class="etiqueta">{{globalSupport}}</p>
+      <h2 style="margin:1rem 0">{{availableLanguages}}</h2>
+      <p class="entradilla">{{globalSupportDesc}}</p>
+      <div class="fichas-idioma">
+        <span class="ficha-idioma">English</span>
+        <span class="ficha-idioma">Español</span>
+        <span class="ficha-idioma">Deutsch</span>
+        <span class="ficha-idioma">Italiano</span>
+        <span class="ficha-idioma">Français</span>
+        <span class="ficha-idioma">Türkçe</span>
+        <span class="ficha-idioma">Português</span>
+        <span class="ficha-idioma">Русский</span>
+        <span class="ficha-idioma">العربية</span>
+        <span class="ficha-idioma">Magyar</span>
+        <span class="ficha-idioma">日本語</span>
+        <span class="ficha-idioma">हिंदी</span>
+        <span class="ficha-idioma">Nederlands</span>
+      </div>
+    </div>
+  </section>
+  <!-- ============================================================== FAQ -->
+  <section id="faq" style="background:var(--surface-2)">
+    <div class="contenedor">
+      <div class="centrado"><h2>FAQ</h2></div>
+      <div class="faq">
+        {{{faq}}}
+      </div>
+    </div>
+  </section>
+  <!-- ============================================================== CTA -->
+  <section id="descargar">
+    <div class="contenedor centrado">
+      <p class="etiqueta"><span class="punto-rec"></span>{{voicePowered}}</p>
+      <h2 style="margin:1rem 0">{{readyTransform}}</h2>
+      <p class="entradilla" style="margin-bottom:2rem">{{readyTransformDesc}}</p>
+      <div class="tiendas" style="justify-content:center">
+        <a href="https://apps.apple.com/app/voice-shopping-list/id6505125372" target="_blank" rel="noopener">
+          <img src="/img/apple.webp" alt="{{downloadIOS}} — App Store" width="180" height="50" loading="lazy">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.lwebch.VoiceList" target="_blank" rel="noopener">
+          <img src="/img/google.webp" alt="{{downloadFree}} — Google Play" width="180" height="50" loading="lazy">
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<!-- barra fija de descarga en móvil, aparece al pasar el hero -->
+<div class="barra-movil" id="barra-movil" data-visible="no">
+  <a class="boton boton-rec" href="https://apps.apple.com/app/voice-shopping-list/id6505125372" target="_blank" rel="noopener">App Store</a>
+  <a class="boton boton-sec" href="https://play.google.com/store/apps/details?id=com.lwebch.VoiceList" target="_blank" rel="noopener">Google Play</a>
+</div>
+
+{{> pie}}
+
+</body>
+</html>

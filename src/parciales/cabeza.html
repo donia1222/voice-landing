@@ -1,0 +1,40 @@
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{{meta.title}}</title>
+  <meta name="description" content="{{meta.description}}">
+  <link rel="canonical" href="{{canonical}}">
+
+  {{{hreflang}}}
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BuyVoice">
+  <meta property="og:locale" content="{{lang}}">
+  <meta property="og:title" content="{{meta.title}}">
+  <meta property="og:description" content="{{meta.description}}">
+  <meta property="og:url" content="{{canonical}}">
+  <meta property="og:image" content="{{sitio}}/img/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{meta.title}}">
+  <meta name="twitter:description" content="{{meta.description}}">
+  <meta name="twitter:image" content="{{sitio}}/img/og.png">
+
+  <meta name="theme-color" content="#faf9f7" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1113" media="(prefers-color-scheme: dark)">
+  <meta name="apple-mobile-web-app-title" content="BuyVoice">
+  <meta name="format-detection" content="telephone=no">
+
+  <link rel="icon" href="/img/icono.png" type="image/png">
+  <link rel="apple-touch-icon" href="/img/icono.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="stylesheet" href="/estilo.css">
+
+  <!-- Aplica el tema guardado antes del primer pintado, para evitar el parpadeo. -->
+  <script>
+    try {
+      var g = localStorage.getItem('tema')
+      if (g) document.documentElement.dataset.theme = g
+    } catch (e) {}
+  </script>

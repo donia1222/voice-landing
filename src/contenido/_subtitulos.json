@@ -1,0 +1,264 @@
+{
+  "_nota": "Tiempos en segundos. Frases cortas a propósito: se leen de un vistazo y no tapan la imagen. No se traducen literalmente — se adapta la longitud a cada idioma para que el banner no crezca a dos líneas.",
+  "hero": {
+    "en": [
+      {
+        "desde": 0.3,
+        "hasta": 3.2,
+        "texto": "Empty fridge. Again."
+      },
+      {
+        "desde": 3.5,
+        "hasta": 6.8,
+        "texto": "Just say it out loud."
+      },
+      {
+        "desde": 7.1,
+        "hasta": 9.8,
+        "texto": "Your list writes itself."
+      }
+    ],
+    "es": [
+      {
+        "desde": 0.3,
+        "hasta": 3.2,
+        "texto": "La nevera vacía otra vez."
+      },
+      {
+        "desde": 3.5,
+        "hasta": 6.8,
+        "texto": "Dilo en voz alta."
+      },
+      {
+        "desde": 7.1,
+        "hasta": 9.8,
+        "texto": "Tu lista se escribe sola."
+      }
+    ],
+    "de": [
+      {
+        "desde": 0.3,
+        "hasta": 3.2,
+        "texto": "Kühlschrank leer. Schon wieder."
+      },
+      {
+        "desde": 3.5,
+        "hasta": 6.8,
+        "texto": "Sag es einfach laut."
+      },
+      {
+        "desde": 7.1,
+        "hasta": 9.8,
+        "texto": "Die Liste schreibt sich selbst."
+      }
+    ],
+    "fr": [
+      {
+        "desde": 0.3,
+        "hasta": 3.2,
+        "texto": "Le frigo vide. Encore."
+      },
+      {
+        "desde": 3.5,
+        "hasta": 6.8,
+        "texto": "Dites-le à voix haute."
+      },
+      {
+        "desde": 7.1,
+        "hasta": 9.8,
+        "texto": "La liste s'écrit toute seule."
+      }
+    ],
+    "it": [
+      {
+        "desde": 0.3,
+        "hasta": 3.2,
+        "texto": "Frigo vuoto. Di nuovo."
+      },
+      {
+        "desde": 3.5,
+        "hasta": 6.8,
+        "texto": "Dillo ad alta voce."
+      },
+      {
+        "desde": 7.1,
+        "hasta": 9.8,
+        "texto": "La lista si scrive da sola."
+      }
+    ]
+  },
+  "supermercado": {
+    "en": [
+      {
+        "desde": 0.4,
+        "hasta": 3.6,
+        "texto": "Your list, in your pocket."
+      },
+      {
+        "desde": 4.0,
+        "hasta": 7.0,
+        "texto": "Tick things off as you go."
+      },
+      {
+        "desde": 7.4,
+        "hasta": 9.9,
+        "texto": "Nothing forgotten."
+      }
+    ],
+    "es": [
+      {
+        "desde": 0.4,
+        "hasta": 3.6,
+        "texto": "Tu lista, en el bolsillo."
+      },
+      {
+        "desde": 4.0,
+        "hasta": 7.0,
+        "texto": "Marca lo que vas cogiendo."
+      },
+      {
+        "desde": 7.4,
+        "hasta": 9.9,
+        "texto": "No se olvida nada."
+      }
+    ],
+    "de": [
+      {
+        "desde": 0.4,
+        "hasta": 3.6,
+        "texto": "Deine Liste, in der Tasche."
+      },
+      {
+        "desde": 4.0,
+        "hasta": 7.0,
+        "texto": "Hak ab, was im Wagen liegt."
+      },
+      {
+        "desde": 7.4,
+        "hasta": 9.9,
+        "texto": "Nichts vergessen."
+      }
+    ],
+    "fr": [
+      {
+        "desde": 0.4,
+        "hasta": 3.6,
+        "texto": "Votre liste, dans la poche."
+      },
+      {
+        "desde": 4.0,
+        "hasta": 7.0,
+        "texto": "Cochez au fur et à mesure."
+      },
+      {
+        "desde": 7.4,
+        "hasta": 9.9,
+        "texto": "Rien d'oublié."
+      }
+    ],
+    "it": [
+      {
+        "desde": 0.4,
+        "hasta": 3.6,
+        "texto": "La tua lista, in tasca."
+      },
+      {
+        "desde": 4.0,
+        "hasta": 7.0,
+        "texto": "Spunta quello che prendi."
+      },
+      {
+        "desde": 7.4,
+        "hasta": 9.9,
+        "texto": "Non dimentichi niente."
+      }
+    ]
+  },
+  "compartir": {
+    "en": [
+      {
+        "desde": 0.4,
+        "hasta": 3.6,
+        "texto": "She adds one thing."
+      },
+      {
+        "desde": 4.6,
+        "hasta": 7.4,
+        "texto": "He sees it instantly."
+      },
+      {
+        "desde": 7.7,
+        "hasta": 9.9,
+        "texto": "One list. No phone calls."
+      }
+    ],
+    "es": [
+      {
+        "desde": 0.4,
+        "hasta": 3.6,
+        "texto": "Ella añade una cosa."
+      },
+      {
+        "desde": 4.6,
+        "hasta": 7.4,
+        "texto": "Él la ve al instante."
+      },
+      {
+        "desde": 7.7,
+        "hasta": 9.9,
+        "texto": "Una lista. Sin llamadas."
+      }
+    ],
+    "de": [
+      {
+        "desde": 0.4,
+        "hasta": 3.6,
+        "texto": "Sie ergänzt etwas."
+      },
+      {
+        "desde": 4.6,
+        "hasta": 7.4,
+        "texto": "Er sieht es sofort."
+      },
+      {
+        "desde": 7.7,
+        "hasta": 9.9,
+        "texto": "Eine Liste. Kein Anruf."
+      }
+    ],
+    "fr": [
+      {
+        "desde": 0.4,
+        "hasta": 3.6,
+        "texto": "Elle ajoute un article."
+      },
+      {
+        "desde": 4.6,
+        "hasta": 7.4,
+        "texto": "Il le voit aussitôt."
+      },
+      {
+        "desde": 7.7,
+        "hasta": 9.9,
+        "texto": "Une liste. Aucun appel."
+      }
+    ],
+    "it": [
+      {
+        "desde": 0.4,
+        "hasta": 3.6,
+        "texto": "Lei aggiunge una cosa."
+      },
+      {
+        "desde": 4.6,
+        "hasta": 7.4,
+        "texto": "Lui la vede subito."
+      },
+      {
+        "desde": 7.7,
+        "hasta": 9.9,
+        "texto": "Una lista. Nessuna chiamata."
+      }
+    ]
+  }
+}

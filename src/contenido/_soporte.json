@@ -1,0 +1,67 @@
+{
+  "en": {
+    "titular": "Need a hand with BuyVoice?",
+    "intro": "Most questions are answered in the FAQ on the home page. If yours isn't there, write to us — a real person reads every message.",
+    "b1t": "Read the FAQ first",
+    "b1d": "How voice recognition works, what Premium includes, sharing lists and price estimates.",
+    "b1a": "Go to the FAQ",
+    "b2t": "Write to us",
+    "b2d": "Questions, bugs and feature requests. Tell us your device and app version and we can help faster.",
+    "b2a": "Contact",
+    "b3t": "Subscriptions and refunds",
+    "b3d": "Premium subscriptions are managed by the App Store and Google Play. Cancellations and refunds go through the store where you subscribed.",
+    "b3a": "Open the store"
+  },
+  "es": {
+    "titular": "¿Necesitas ayuda con BuyVoice?",
+    "intro": "La mayoría de las dudas están resueltas en las preguntas frecuentes de la portada. Si la tuya no está, escríbenos: los mensajes los lee una persona.",
+    "b1t": "Mira primero las preguntas frecuentes",
+    "b1d": "Cómo funciona el reconocimiento de voz, qué incluye Premium, compartir listas y precios estimados.",
+    "b1a": "Ir a las preguntas frecuentes",
+    "b2t": "Escríbenos",
+    "b2d": "Dudas, fallos y sugerencias. Si nos dices tu dispositivo y la versión de la app, podemos ayudarte antes.",
+    "b2a": "Contacto",
+    "b3t": "Suscripciones y reembolsos",
+    "b3d": "Las suscripciones Premium las gestionan App Store y Google Play. Las cancelaciones y los reembolsos se tramitan en la tienda donde te suscribiste.",
+    "b3a": "Abrir la tienda"
+  },
+  "de": {
+    "titular": "Brauchst du Hilfe mit BuyVoice?",
+    "intro": "Die meisten Fragen sind in den FAQ auf der Startseite beantwortet. Wenn deine nicht dabei ist, schreib uns — jede Nachricht wird von einem Menschen gelesen.",
+    "b1t": "Zuerst die FAQ lesen",
+    "b1d": "Wie die Spracherkennung funktioniert, was Premium enthält, Listen teilen und Preisschätzungen.",
+    "b1a": "Zu den FAQ",
+    "b2t": "Schreib uns",
+    "b2d": "Fragen, Fehler und Wünsche. Mit Angabe von Gerät und App-Version können wir schneller helfen.",
+    "b2a": "Kontakt",
+    "b3t": "Abos und Rückerstattungen",
+    "b3d": "Premium-Abos werden über den App Store und Google Play verwaltet. Kündigungen und Rückerstattungen laufen über den Store, in dem du abonniert hast.",
+    "b3a": "Store öffnen"
+  },
+  "fr": {
+    "titular": "Besoin d'aide avec BuyVoice ?",
+    "intro": "La plupart des questions trouvent leur réponse dans la FAQ de la page d'accueil. Si la vôtre n'y est pas, écrivez-nous : chaque message est lu par une personne.",
+    "b1t": "Consultez d'abord la FAQ",
+    "b1d": "Fonctionnement de la reconnaissance vocale, contenu de Premium, partage de listes et estimation des prix.",
+    "b1a": "Aller à la FAQ",
+    "b2t": "Écrivez-nous",
+    "b2d": "Questions, bugs et suggestions. Précisez votre appareil et la version de l'application pour une aide plus rapide.",
+    "b2a": "Contact",
+    "b3t": "Abonnements et remboursements",
+    "b3d": "Les abonnements Premium sont gérés par l'App Store et Google Play. Les résiliations et remboursements passent par la boutique où vous vous êtes abonné.",
+    "b3a": "Ouvrir la boutique"
+  },
+  "it": {
+    "titular": "Ti serve aiuto con BuyVoice?",
+    "intro": "La maggior parte dei dubbi trova risposta nelle domande frequenti in home page. Se il tuo non c'è, scrivici: ogni messaggio è letto da una persona.",
+    "b1t": "Guarda prima le domande frequenti",
+    "b1d": "Come funziona il riconoscimento vocale, cosa include Premium, condividere le liste e le stime dei prezzi.",
+    "b1a": "Vai alle domande frequenti",
+    "b2t": "Scrivici",
+    "b2d": "Domande, errori e suggerimenti. Indicando dispositivo e versione dell'app possiamo aiutarti più in fretta.",
+    "b2a": "Contatti",
+    "b3t": "Abbonamenti e rimborsi",
+    "b3d": "Gli abbonamenti Premium sono gestiti da App Store e Google Play. Disdette e rimborsi si effettuano nello store in cui ti sei abbonato.",
+    "b3a": "Apri lo store"
+  }
+}

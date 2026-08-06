@@ -1,0 +1,68 @@
+{
+  "_nota": "Los pies de las capturas. El orden del array es el orden de la galería.",
+
+  "en": {
+    "titulo": "See it in action",
+    "intro": "Five screens, start to finish: say it, save it, price it, plan it.",
+    "pista": "Swipe to see more",
+    "tomas": [
+      { "archivo": "voz",        "titulo": "Say it out loud",    "pie": "Tap the mic and talk. Items appear as you speak — no typing." },
+      { "archivo": "listas",     "titulo": "Your saved lists",   "pie": "Food, stationery, pharmacy, hardware. Tick things off as you shop." },
+      { "archivo": "precios",    "titulo": "What it will cost",  "pie": "Pick a city and get an itemised estimate before you leave home." },
+      { "archivo": "calendario", "titulo": "Plan your shopping", "pie": "Put a list on a date and get a reminder when the day comes." },
+      { "archivo": "inicio",     "titulo": "Everything at hand", "pie": "Today's list, the calendar and the mic, all on one screen." }
+    ]
+  },
+
+  "es": {
+    "titulo": "Así funciona",
+    "intro": "Cinco pantallas de principio a fin: dilo, guárdalo, calcula el precio y planifícalo.",
+    "pista": "Desliza para ver más",
+    "tomas": [
+      { "archivo": "voz",        "titulo": "Dilo en voz alta",     "pie": "Pulsa el micro y habla. Los productos aparecen según hablas, sin escribir nada." },
+      { "archivo": "listas",     "titulo": "Tus listas guardadas", "pie": "Comida, papelería, farmacia, ferretería. Ve marcando mientras compras." },
+      { "archivo": "precios",    "titulo": "Cuánto te va a costar","pie": "Elige ciudad y obtén el desglose antes de salir de casa." },
+      { "archivo": "calendario", "titulo": "Planifica la compra",  "pie": "Pon una lista en un día y recibe el aviso cuando llegue." },
+      { "archivo": "inicio",     "titulo": "Todo a mano",          "pie": "La lista de hoy, el calendario y el micro en una sola pantalla." }
+    ]
+  },
+
+  "de": {
+    "titulo": "So funktioniert es",
+    "intro": "Fünf Screens von Anfang bis Ende: sagen, speichern, Preis rechnen, planen.",
+    "pista": "Wischen für mehr",
+    "tomas": [
+      { "archivo": "voz",        "titulo": "Sag es einfach laut",  "pie": "Mikro antippen und sprechen. Die Artikel erscheinen beim Sprechen — ohne Tippen." },
+      { "archivo": "listas",     "titulo": "Deine Listen",         "pie": "Essen, Büro, Apotheke, Werkzeug. Beim Einkaufen einfach abhaken." },
+      { "archivo": "precios",    "titulo": "Was es kosten wird",   "pie": "Stadt wählen und die Aufstellung erhalten, bevor du losgehst." },
+      { "archivo": "calendario", "titulo": "Einkauf planen",       "pie": "Leg eine Liste auf ein Datum und werde am Tag erinnert." },
+      { "archivo": "inicio",     "titulo": "Alles griffbereit",    "pie": "Die Liste von heute, der Kalender und das Mikro auf einem Screen." }
+    ]
+  },
+
+  "fr": {
+    "titulo": "L'application en action",
+    "intro": "Cinq écrans du début à la fin : dites-le, enregistrez, chiffrez, planifiez.",
+    "pista": "Faites glisser pour voir plus",
+    "tomas": [
+      { "archivo": "voz",        "titulo": "Dites-le à voix haute", "pie": "Touchez le micro et parlez. Les articles apparaissent au fil de vos mots." },
+      { "archivo": "listas",     "titulo": "Vos listes enregistrées","pie": "Alimentation, papeterie, pharmacie, bricolage. Cochez en faisant vos courses." },
+      { "archivo": "precios",    "titulo": "Ce que ça va coûter",   "pie": "Choisissez une ville et obtenez le détail avant de sortir." },
+      { "archivo": "calendario", "titulo": "Planifiez vos courses", "pie": "Placez une liste à une date et recevez un rappel le jour venu." },
+      { "archivo": "inicio",     "titulo": "Tout sous la main",     "pie": "La liste du jour, le calendrier et le micro sur un seul écran." }
+    ]
+  },
+
+  "it": {
+    "titulo": "Come funziona",
+    "intro": "Cinque schermate dall'inizio alla fine: dillo, salvalo, calcola il prezzo, pianifica.",
+    "pista": "Scorri per vedere altro",
+    "tomas": [
+      { "archivo": "voz",        "titulo": "Dillo ad alta voce",   "pie": "Tocca il microfono e parla. I prodotti compaiono mentre parli, senza scrivere." },
+      { "archivo": "listas",     "titulo": "Le tue liste salvate", "pie": "Cibo, cartoleria, farmacia, ferramenta. Spunta mentre fai la spesa." },
+      { "archivo": "precios",    "titulo": "Quanto costerà",       "pie": "Scegli la città e ottieni il dettaglio prima di uscire di casa." },
+      { "archivo": "calendario", "titulo": "Pianifica la spesa",   "pie": "Metti una lista in un giorno e ricevi il promemoria quando arriva." },
+      { "archivo": "inicio",     "titulo": "Tutto a portata",      "pie": "La lista di oggi, il calendario e il microfono in una sola schermata." }
+    ]
+  }
+}

@@ -521,6 +521,14 @@ section { padding-block: var(--seccion); }
 .barra-movil[data-visible="si"] { transform: none; }
 @media (min-width: 52rem) { .barra-movil { display: none; } }
 
+/* La tarjeta es fija, así que hay que reservarle sitio: sin esto tapa el
+   final del pie y los enlaces de privacidad y términos quedan debajo.
+   El selector de hermano lo limita a las páginas que llevan banner — las
+   legales y la de contacto no lo tienen y no deben ganar ese hueco. */
+@media (max-width: 51.99rem) {
+  .barra-movil ~ .pie { padding-bottom: calc(7rem + env(safe-area-inset-bottom)); }
+}
+
 .barra-tarjeta {
   pointer-events: auto;
   display: flex; align-items: center; gap: 0.85rem;

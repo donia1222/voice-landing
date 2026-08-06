@@ -95,16 +95,24 @@ const avisos = []
 
 // ---------------------------------------------------------------- utilidades
 
-/** URL absoluta de una página en un idioma dado. */
+/**
+ * URL absoluta de una página en un idioma dado.
+ *
+ * Sin barra final, porque vercel.json declara trailingSlash:false y Vercel
+ * redirige con un 308 cualquier URL que la lleve. La única excepción es la
+ * portada en el idioma principal, que es la raíz del dominio.
+ */
 function url(lang, ruta) {
   const base = lang === PRINCIPAL ? SITIO : `${SITIO}/${lang}`
-  return ruta ? `${base}/${ruta}` : `${base}/`
+  if (ruta) return `${base}/${ruta}`
+  return lang === PRINCIPAL ? `${base}/` : base
 }
 
 /** Ruta relativa, para los enlaces internos dentro del HTML. */
 function href(lang, ruta) {
   const base = lang === PRINCIPAL ? '' : `/${lang}`
-  return ruta ? `${base}/${ruta}` : `${base}/`
+  if (ruta) return `${base}/${ruta}`
+  return base || '/'
 }
 
 /** El bloque <link rel="alternate"> completo de una página. */

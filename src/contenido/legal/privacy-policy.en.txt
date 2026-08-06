@@ -1,4 +1,4 @@
-Privacy Policy Manual Shopping list
+Privacy Policy BuyVoice
 
 Last updated: 10.07.2024
 
@@ -8,7 +8,7 @@ If you have further questions or require more information about our Privacy Poli
 
 Information Collection and Subscriptions
 
-Manual Shopping list does not collect personally identifiable information from users. For subscriptions, we use a service provider (e.g., RevenueCat), which assigns an anonymous identifier for each user. This identifier is not used to personally identify the user.
+BuyVoice does not collect personally identifiable information from users. For subscriptions, we use a service provider (e.g., RevenueCat), which assigns an anonymous identifier for each user. This identifier is not used to personally identify the user.
 
 The information collected for subscriptions is solely for processing payments and managing subscriptions efficiently. This information is treated with the highest confidentiality and security.
 

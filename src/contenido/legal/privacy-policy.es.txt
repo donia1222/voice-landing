@@ -1,4 +1,4 @@
-Política de Privacidad Lista de Compras Manual
+Política de Privacidad BuyVoice
 
 Última actualización: 10.07.2024
 
@@ -8,7 +8,7 @@ Si tiene más preguntas o requiere más información sobre nuestra Política de 
 
 Recopilación de Información y Suscripciones
 
-La Lista de Compras Manual no recopila información de identificación personal de los usuarios. Para las suscripciones, utilizamos un proveedor de servicios (por ejemplo, RevenueCat), que asigna un identificador anónimo para cada usuario. Este identificador no se utiliza para identificar personalmente al usuario.
+La BuyVoice no recopila información de identificación personal de los usuarios. Para las suscripciones, utilizamos un proveedor de servicios (por ejemplo, RevenueCat), que asigna un identificador anónimo para cada usuario. Este identificador no se utiliza para identificar personalmente al usuario.
 
 La información recopilada para las suscripciones es únicamente para procesar pagos y gestionar suscripciones de manera eficiente. Esta información se trata con la máxima confidencialidad y seguridad.
 

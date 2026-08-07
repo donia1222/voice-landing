@@ -131,7 +131,7 @@ createServer(async (req, res) => {
   }
 }).listen(PUERTO, () => {
   compilar()
-  console.log(`\n  BuyVoice en desarrollo\n`)
+  console.log(`\n  Voice Grocery en desarrollo\n`)
   console.log(`    http://localhost:${PUERTO}/       inglés`)
   console.log(`    http://localhost:${PUERTO}/es/    español`)
   console.log(`    http://localhost:${PUERTO}/de/    ·  /fr/  ·  /it/\n`)

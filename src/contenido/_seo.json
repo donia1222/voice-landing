@@ -1,116 +1,116 @@
 {
   "en": {
     "index": {
-      "title": "BuyVoice — Create Shopping Lists by Voice",
-      "description": "Say what you need and BuyVoice writes your shopping list for you. Voice recognition, shared lists and price estimates by city. Free on iOS and Android."
+      "title": "Voice Grocery — Create Shopping Lists by Voice",
+      "description": "Say what you need and Voice Grocery writes your shopping list for you. Voice recognition, shared lists and price estimates by city. Free on iOS and Android."
     },
     "support": {
-      "title": "Support & Help — BuyVoice",
-      "description": "Answers to the most common questions about BuyVoice: voice recognition, sharing lists, premium features and account issues."
+      "title": "Support & Help — Voice Grocery",
+      "description": "Answers to the most common questions about Voice Grocery: voice recognition, sharing lists, premium features and account issues."
     },
     "contact": {
-      "title": "Contact — BuyVoice",
-      "description": "Get in touch with the BuyVoice team. We answer questions, bug reports and feature requests."
+      "title": "Contact — Voice Grocery",
+      "description": "Get in touch with the Voice Grocery team. We answer questions, bug reports and feature requests."
     },
     "privacy-policy": {
-      "title": "Privacy Policy — BuyVoice",
-      "description": "How BuyVoice collects, uses and protects your data, including how voice recordings are handled."
+      "title": "Privacy Policy — Voice Grocery",
+      "description": "How Voice Grocery collects, uses and protects your data, including how voice recordings are handled."
     },
     "terms-of-service": {
-      "title": "Terms of Service — BuyVoice",
-      "description": "The terms that govern your use of the BuyVoice app and website."
+      "title": "Terms of Service — Voice Grocery",
+      "description": "The terms that govern your use of the Voice Grocery app and website."
     }
   },
 
   "es": {
     "index": {
-      "title": "Crea listas de la compra por voz — BuyVoice",
-      "description": "Di en voz alta lo que necesitas y BuyVoice escribe tu lista de compras sola. Reconocimiento de voz, listas compartidas y precios estimados por ciudad. Gratis en iOS y Android."
+      "title": "Crea listas de la compra por voz — Voice Grocery",
+      "description": "Di en voz alta lo que necesitas y Voice Grocery escribe tu lista de compras sola. Reconocimiento de voz, listas compartidas y precios estimados por ciudad. Gratis en iOS y Android."
     },
     "support": {
-      "title": "Ayuda y soporte — BuyVoice",
-      "description": "Respuestas a las dudas más frecuentes sobre BuyVoice: reconocimiento de voz, compartir listas, funciones premium y problemas con la cuenta."
+      "title": "Ayuda y soporte — Voice Grocery",
+      "description": "Respuestas a las dudas más frecuentes sobre Voice Grocery: reconocimiento de voz, compartir listas, funciones premium y problemas con la cuenta."
     },
     "contact": {
-      "title": "Contacto — BuyVoice",
-      "description": "Escribe al equipo de BuyVoice. Respondemos dudas, fallos y sugerencias de nuevas funciones."
+      "title": "Contacto — Voice Grocery",
+      "description": "Escribe al equipo de Voice Grocery. Respondemos dudas, fallos y sugerencias de nuevas funciones."
     },
     "privacy-policy": {
-      "title": "Política de privacidad — BuyVoice",
-      "description": "Cómo BuyVoice recoge, usa y protege tus datos, incluido el tratamiento de las grabaciones de voz."
+      "title": "Política de privacidad — Voice Grocery",
+      "description": "Cómo Voice Grocery recoge, usa y protege tus datos, incluido el tratamiento de las grabaciones de voz."
     },
     "terms-of-service": {
-      "title": "Términos del servicio — BuyVoice",
-      "description": "Las condiciones que regulan el uso de la aplicación y la web de BuyVoice."
+      "title": "Términos del servicio — Voice Grocery",
+      "description": "Las condiciones que regulan el uso de la aplicación y la web de Voice Grocery."
     }
   },
 
   "de": {
     "index": {
-      "title": "Einkaufslisten per Sprache erstellen — BuyVoice",
-      "description": "Sag einfach, was du brauchst — BuyVoice schreibt deine Einkaufsliste. Spracherkennung, geteilte Listen und Preisschätzungen pro Stadt. Gratis für iOS und Android."
+      "title": "Einkaufslisten per Sprache erstellen — Voice Grocery",
+      "description": "Sag einfach, was du brauchst — Voice Grocery schreibt deine Einkaufsliste. Spracherkennung, geteilte Listen und Preisschätzungen pro Stadt. Gratis für iOS und Android."
     },
     "support": {
-      "title": "Hilfe & Support — BuyVoice",
-      "description": "Antworten auf die häufigsten Fragen zu BuyVoice: Spracherkennung, Listen teilen, Premium-Funktionen und Kontoprobleme."
+      "title": "Hilfe & Support — Voice Grocery",
+      "description": "Antworten auf die häufigsten Fragen zu Voice Grocery: Spracherkennung, Listen teilen, Premium-Funktionen und Kontoprobleme."
     },
     "contact": {
-      "title": "Kontakt — BuyVoice",
-      "description": "Schreib dem BuyVoice-Team. Wir beantworten Fragen, Fehlermeldungen und Wünsche für neue Funktionen."
+      "title": "Kontakt — Voice Grocery",
+      "description": "Schreib dem Voice-Grocery-Team. Wir beantworten Fragen, Fehlermeldungen und Wünsche für neue Funktionen."
     },
     "privacy-policy": {
-      "title": "Datenschutzerklärung — BuyVoice",
-      "description": "Wie BuyVoice deine Daten erhebt, verwendet und schützt — einschliesslich der Verarbeitung von Sprachaufnahmen."
+      "title": "Datenschutzerklärung — Voice Grocery",
+      "description": "Wie Voice Grocery deine Daten erhebt, verwendet und schützt — einschliesslich der Verarbeitung von Sprachaufnahmen."
     },
     "terms-of-service": {
-      "title": "Nutzungsbedingungen — BuyVoice",
-      "description": "Die Bedingungen für die Nutzung der BuyVoice-App und -Website."
+      "title": "Nutzungsbedingungen — Voice Grocery",
+      "description": "Die Bedingungen für die Nutzung der Voice-Grocery-App und -Website."
     }
   },
 
   "fr": {
     "index": {
-      "title": "Créez vos listes de courses à la voix — BuyVoice",
-      "description": "Dites ce dont vous avez besoin, BuyVoice écrit votre liste de courses. Reconnaissance vocale, listes partagées et estimation des prix par ville. Gratuit sur iOS et Android."
+      "title": "Créez vos listes de courses à la voix — Voice Grocery",
+      "description": "Dites ce dont vous avez besoin, Voice Grocery écrit votre liste de courses. Reconnaissance vocale, listes partagées et estimation des prix par ville. Gratuit sur iOS et Android."
     },
     "support": {
-      "title": "Aide et support — BuyVoice",
-      "description": "Réponses aux questions les plus fréquentes sur BuyVoice : reconnaissance vocale, partage de listes, fonctions premium et problèmes de compte."
+      "title": "Aide et support — Voice Grocery",
+      "description": "Réponses aux questions les plus fréquentes sur Voice Grocery : reconnaissance vocale, partage de listes, fonctions premium et problèmes de compte."
     },
     "contact": {
-      "title": "Contact — BuyVoice",
-      "description": "Écrivez à l'équipe BuyVoice. Nous répondons aux questions, aux bugs et aux suggestions de nouvelles fonctions."
+      "title": "Contact — Voice Grocery",
+      "description": "Écrivez à l'équipe Voice Grocery. Nous répondons aux questions, aux bugs et aux suggestions de nouvelles fonctions."
     },
     "privacy-policy": {
-      "title": "Politique de confidentialité — BuyVoice",
-      "description": "Comment BuyVoice collecte, utilise et protège vos données, y compris le traitement des enregistrements vocaux."
+      "title": "Politique de confidentialité — Voice Grocery",
+      "description": "Comment Voice Grocery collecte, utilise et protège vos données, y compris le traitement des enregistrements vocaux."
     },
     "terms-of-service": {
-      "title": "Conditions d'utilisation — BuyVoice",
-      "description": "Les conditions qui régissent l'utilisation de l'application et du site BuyVoice."
+      "title": "Conditions d'utilisation — Voice Grocery",
+      "description": "Les conditions qui régissent l'utilisation de l'application et du site Voice Grocery."
     }
   },
 
   "it": {
     "index": {
-      "title": "Crea liste della spesa con la voce — BuyVoice",
-      "description": "Di' ad alta voce cosa ti serve e BuyVoice scrive la lista della spesa per te. Riconoscimento vocale, liste condivise e stime dei prezzi per città. Gratis su iOS e Android."
+      "title": "Crea liste della spesa con la voce — Voice Grocery",
+      "description": "Di' ad alta voce cosa ti serve e Voice Grocery scrive la lista della spesa per te. Riconoscimento vocale, liste condivise e stime dei prezzi per città. Gratis su iOS e Android."
     },
     "support": {
-      "title": "Assistenza e supporto — BuyVoice",
-      "description": "Risposte alle domande più frequenti su BuyVoice: riconoscimento vocale, condivisione delle liste, funzioni premium e problemi con l'account."
+      "title": "Assistenza e supporto — Voice Grocery",
+      "description": "Risposte alle domande più frequenti su Voice Grocery: riconoscimento vocale, condivisione delle liste, funzioni premium e problemi con l'account."
     },
     "contact": {
-      "title": "Contatti — BuyVoice",
-      "description": "Scrivi al team di BuyVoice. Rispondiamo a domande, segnalazioni di errori e richieste di nuove funzioni."
+      "title": "Contatti — Voice Grocery",
+      "description": "Scrivi al team di Voice Grocery. Rispondiamo a domande, segnalazioni di errori e richieste di nuove funzioni."
     },
     "privacy-policy": {
-      "title": "Informativa sulla privacy — BuyVoice",
-      "description": "Come BuyVoice raccoglie, utilizza e protegge i tuoi dati, incluso il trattamento delle registrazioni vocali."
+      "title": "Informativa sulla privacy — Voice Grocery",
+      "description": "Come Voice Grocery raccoglie, utilizza e protegge i tuoi dati, incluso il trattamento delle registrazioni vocali."
     },
     "terms-of-service": {
-      "title": "Termini di servizio — BuyVoice",
-      "description": "Le condizioni che regolano l'uso dell'app e del sito BuyVoice."
+      "title": "Termini di servizio — Voice Grocery",
+      "description": "Le condizioni che regolano l'uso dell'app e del sito Voice Grocery."
     }
   }
 }

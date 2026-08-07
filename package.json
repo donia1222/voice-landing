@@ -1,9 +1,9 @@
 {
-  "name": "buyvoice-landing",
+  "name": "voice-grocery-landing",
   "version": "2.0.0",
   "private": true,
   "type": "module",
-  "description": "Landing de BuyVoice — HTML estático generado, sin framework ni dependencias",
+  "description": "Landing de Voice Grocery — HTML estático generado, sin framework ni dependencias",
   "scripts": {
     "dev": "node dev.mjs",
     "build": "node build.mjs"

@@ -49,7 +49,7 @@
     var d = new FormData(e.target)
     var cuerpo = d.get('mensaje') + '\n\n— ' + d.get('nombre') + ' (' + d.get('email') + ')'
     window.location.href =
-      'mailto:info@lweb.ch?subject=' + encodeURIComponent('[BuyVoice] ' + d.get('asunto')) +
+      'mailto:info@lweb.ch?subject=' + encodeURIComponent('[Voice Grocery] ' + d.get('asunto')) +
       '&body=' + encodeURIComponent(cuerpo)
   })
 </script>

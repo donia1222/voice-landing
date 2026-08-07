@@ -1,4 +1,4 @@
-/* BuyVoice — lo mínimo que necesita la página. Sin dependencias. */
+/* Voice Grocery — lo mínimo que necesita la página. Sin dependencias. */
 ;(function () {
   'use strict'
 

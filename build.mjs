@@ -1,5 +1,5 @@
 /**
- * BuyVoice — generador estático
+ * Voice Grocery — generador estático
  *
  * Lee las plantillas de src/ y el contenido de src/contenido/*.json,
  * y escribe en dist/ una copia de cada página por idioma, con su metadata,
@@ -25,7 +25,7 @@ const CONTENIDO = join(SRC, 'contenido')
  * en Vercel, hay que cambiarlo aquí también, o los canonical apuntarán a una
  * URL que redirige.
  */
-const SITIO = process.env.SITIO ?? 'https://www.buyvoice.app'
+const SITIO = process.env.SITIO ?? 'https://www.voicegrocerylist.com'
 
 /** Idioma en la raíz del dominio. El resto cuelga de /es/, /de/, ... */
 const PRINCIPAL = 'en'
@@ -279,7 +279,7 @@ for (const lang of idiomas) {
       {
         '@context': 'https://schema.org',
         '@type': 'MobileApplication',
-        name: 'BuyVoice',
+        name: 'Voice Grocery',
         applicationCategory: 'LifestyleApplication',
         operatingSystem: 'iOS, Android',
         inLanguage: idiomas,

@@ -1,7 +1,7 @@
 {
-  "name": "BuyVoice — Voice Shopping Lists",
-  "short_name": "BuyVoice",
-  "description": "Say what you need and BuyVoice writes your shopping list for you.",
+  "name": "Voice Grocery — Voice Shopping Lists",
+  "short_name": "Voice Grocery",
+  "description": "Say what you need and Voice Grocery writes your shopping list for you.",
   "start_url": "/",
   "scope": "/",
   "display": "browser",

@@ -1,6 +1,6 @@
 {
   "en": {
-    "titular": "Need a hand with BuyVoice?",
+    "titular": "Need a hand with Voice Grocery?",
     "intro": "Most questions are answered in the FAQ on the home page. If yours isn't there, write to us — a real person reads every message.",
     "b1t": "Read the FAQ first",
     "b1d": "How voice recognition works, what Premium includes, sharing lists and price estimates.",
@@ -13,7 +13,7 @@
     "b3a": "Open the store"
   },
   "es": {
-    "titular": "¿Necesitas ayuda con BuyVoice?",
+    "titular": "¿Necesitas ayuda con Voice Grocery?",
     "intro": "La mayoría de las dudas están resueltas en las preguntas frecuentes de la portada. Si la tuya no está, escríbenos: los mensajes los lee una persona.",
     "b1t": "Mira primero las preguntas frecuentes",
     "b1d": "Cómo funciona el reconocimiento de voz, qué incluye Premium, compartir listas y precios estimados.",
@@ -26,7 +26,7 @@
     "b3a": "Abrir la tienda"
   },
   "de": {
-    "titular": "Brauchst du Hilfe mit BuyVoice?",
+    "titular": "Brauchst du Hilfe mit Voice Grocery?",
     "intro": "Die meisten Fragen sind in den FAQ auf der Startseite beantwortet. Wenn deine nicht dabei ist, schreib uns — jede Nachricht wird von einem Menschen gelesen.",
     "b1t": "Zuerst die FAQ lesen",
     "b1d": "Wie die Spracherkennung funktioniert, was Premium enthält, Listen teilen und Preisschätzungen.",
@@ -39,7 +39,7 @@
     "b3a": "Store öffnen"
   },
   "fr": {
-    "titular": "Besoin d'aide avec BuyVoice ?",
+    "titular": "Besoin d'aide avec Voice Grocery ?",
     "intro": "La plupart des questions trouvent leur réponse dans la FAQ de la page d'accueil. Si la vôtre n'y est pas, écrivez-nous : chaque message est lu par une personne.",
     "b1t": "Consultez d'abord la FAQ",
     "b1d": "Fonctionnement de la reconnaissance vocale, contenu de Premium, partage de listes et estimation des prix.",
@@ -52,7 +52,7 @@
     "b3a": "Ouvrir la boutique"
   },
   "it": {
-    "titular": "Ti serve aiuto con BuyVoice?",
+    "titular": "Ti serve aiuto con Voice Grocery?",
     "intro": "La maggior parte dei dubbi trova risposta nelle domande frequenti in home page. Se il tuo non c'è, scrivici: ogni messaggio è letto da una persona.",
     "b1t": "Guarda prima le domande frequenti",
     "b1d": "Come funziona il riconoscimento vocale, cosa include Premium, condividere le liste e le stime dei prezzi.",

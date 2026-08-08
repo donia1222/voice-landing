@@ -1,7 +1,7 @@
 /* ==========================================================================
    Voice Grocery — hoja de estilo única
-   Acento: el violeta del icono de la app. Fondos crema y salvia, tomados
-   del degradado de la propia app. Verde solo para lo confirmado.
+   Acento: el verde del icono de la app. Fondos crema y salvia, tomados
+   del degradado de la propia app. Verde claro solo para lo confirmado.
    ========================================================================== */
 
 :root {
@@ -16,12 +16,13 @@
   --surface:    #ffffff;
   --surface-2:  #eef2df;   /* salvia de la app */
 
-  /* Violeta de la marca, tomado del icono. Dos tonos porque el claro no
-     llega a 4.5:1 sobre fondo claro: el vivo es decorativo, el profundo
-     es el que puede llevar o recibir texto. */
-  --acento:      #7c6ef5;
-  --acento-ink:  #5b4bd8;
-  --acento-soft: #f3eefd;
+  /* Verde de la marca, tomado del micrófono del icono. Dos tonos: el vivo
+     es decorativo y sirve de hover, el profundo es el que puede llevar o
+     recibir texto. --sobre-acento es el color del texto encima del acento. */
+  --acento:      #3a7049;
+  --acento-ink:  #2c5839;
+  --acento-soft: #e9f1e8;
+  --sobre-acento: #ffffff;
 
   --done:       #2f7d4f;   /* marcado, incluido, hecho */
   --done-soft:  #e7f2e6;
@@ -57,9 +58,10 @@
     --surface:   #191c19;
     --surface-2: #202420;
 
-    --acento:      #a08ffb;
-    --acento-ink:  #b6a8ff;
-    --acento-soft: #221c33;
+    --acento:      #85c99b;
+    --acento-ink:  #6ab97f;
+    --acento-soft: #182a1d;
+    --sobre-acento: #0e140f;
 
     --done:      #5cc47f;
     --done-soft: #14251a;
@@ -70,13 +72,13 @@
 :root[data-theme="dark"] {
   --ink:#eaeae4; --ink-2:#b8bdb0; --muted:#8d9386; --rule:#2e3230;
   --paper:#101210; --surface:#191c19; --surface-2:#202420;
-  --acento:#a08ffb; --acento-ink:#b6a8ff; --acento-soft:#221c33;
+  --acento:#85c99b; --acento-ink:#6ab97f; --acento-soft:#182a1d; --sobre-acento:#0e140f;
   --done:#5cc47f; --done-soft:#14251a;
 }
 :root[data-theme="light"] {
   --ink:#1b2018; --ink-2:#46503f; --muted:#737d6c; --rule:#e2e4d2;
   --paper:#faf8ec; --surface:#ffffff; --surface-2:#eef2df;
-  --acento:#7c6ef5; --acento-ink:#5b4bd8; --acento-soft:#f3eefd;
+  --acento:#3a7049; --acento-ink:#2c5839; --acento-soft:#e9f1e8; --sobre-acento:#ffffff;
   --done:#2f7d4f; --done-soft:#e7f2e6;
 }
 
@@ -223,7 +225,7 @@ section { padding-block: var(--seccion); }
   transition: transform .12s ease, background-color .15s, border-color .15s;
 }
 .boton:active { transform: translateY(1px); }
-.boton-acento  { background: var(--acento-ink); color: #fff; }
+.boton-acento  { background: var(--acento-ink); color: var(--sobre-acento); }
 .boton-acento:hover { background: var(--acento); }
 .boton-sec  { background: var(--surface); color: var(--ink); border-color: var(--rule); }
 .boton-sec:hover { border-color: var(--muted); }
@@ -369,7 +371,7 @@ section { padding-block: var(--seccion); }
 /* Las dos funciones que venden la app ocupan el doble y llevan el acento. */
 .funcion.destacada { background: var(--acento-soft); border-color: transparent; }
 @media (min-width: 52rem) { .funcion.destacada { grid-column: span 2; } }
-.funcion.destacada .funcion-icono { background: var(--acento-ink); color: #fff; }
+.funcion.destacada .funcion-icono { background: var(--acento-ink); color: var(--sobre-acento); }
 
 .funcion-icono {
   width: 2.5rem; height: 2.5rem; border-radius: 9px;
@@ -447,7 +449,7 @@ section { padding-block: var(--seccion); }
 .plan.recomendado { border-color: var(--acento); position: relative; }
 .plan-cinta {
   position: absolute; top: -0.7rem; inset-inline-start: 1.7rem;
-  background: var(--acento-ink); color: #fff;
+  background: var(--acento-ink); color: var(--sobre-acento);
   font-family: var(--mono); font-size: var(--t-xs); letter-spacing: .1em;
   text-transform: uppercase; padding: 0.2rem 0.6rem; border-radius: 5px;
 }
@@ -556,7 +558,7 @@ section { padding-block: var(--seccion); }
 
 .barra-cta {
   flex: none;
-  background: var(--acento-ink); color: #fff;
+  background: var(--acento-ink); color: var(--sobre-acento);
   font-size: 1rem; font-weight: 700; letter-spacing: -0.01em;
   padding: 0.72rem 1.35rem; border-radius: 100px;
   white-space: nowrap;

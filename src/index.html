@@ -48,6 +48,27 @@
 
     </div>
   </section>
+  <!-- ==================================================== foto a lista -->
+  <!-- Mismo reparto que el hero, pero con la ilustración en vez del vídeo:
+       de la lista de papel a la lista de la app. -->
+  <section id="foto-lista" class="hero foto-lista">
+    <div class="contenedor hero-rejilla">
+
+      <div>
+        <p class="etiqueta"><span class="punto"></span>{{fotoEtiqueta}}</p>
+        <h2>{{fotoTitulo}}<span class="acento">{{fotoTituloAcento}}</span></h2>
+        <p class="entradilla">{{fotoDescription}}</p>
+        <p class="hero-nota">{{fotoNota}}</p>
+      </div>
+
+      <!-- Ilustración animada en SVG: pesa unos 11 kB, se anima sola y toma
+           los colores del tema, así que vale igual en claro y en oscuro. -->
+      <figure class="video-marco foto-marco" style="margin:0">
+{{> foto-animacion}}
+      </figure>
+
+    </div>
+  </section>
   <!-- ======================================================= compartir -->
   <!-- Vídeo cuadrado: va al lado del texto, no a lo ancho. -->
   <section id="compartir" style="background:var(--surface-2)">

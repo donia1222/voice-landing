@@ -1,0 +1,74 @@
+  <!--
+    Píxel de Meta.
+
+    Mide las visitas y, sobre todo, los clics en los botones de descarga: sin
+    eso Meta no puede optimizar los anuncios y estarías pagando a ciegas.
+
+    OJO CON EL CONSENTIMIENTO. Esto pone cookies y manda la IP del visitante a
+    Meta. En Alemania —donde vas a anunciarte— el § 25 de la TTDSG exige
+    pedirlo antes. Ahora mismo el píxel arranca para todo el mundo: si añades
+    un banner, mueve la llamada a `arrancarPixel()` del final de este archivo
+    a donde el visitante acepte, y no toques nada más.
+  -->
+  <script>
+    (function () {
+      var PIXEL = '1750437386268481'
+
+      function cargar() {
+        if (window.fbq) return
+        var n = (window.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        })
+        if (!window._fbq) window._fbq = n
+        n.push = n
+        n.loaded = true
+        n.version = '2.0'
+        n.queue = []
+        var t = document.createElement('script')
+        t.async = true
+        t.src = 'https://connect.facebook.net/en_US/fbevents.js'
+        var s = document.getElementsByTagName('script')[0]
+        s.parentNode.insertBefore(t, s)
+      }
+
+      /**
+       * Un clic en cualquier botón de descarga.
+       *
+       * Se escucha en el documento entero en vez de en cada botón: están en
+       * tres sitios —la cabecera, el pie y la llamada del final— y así el día
+       * que se añada un cuarto no hay que acordarse de nada.
+       *
+       * Los enlaces abren en pestaña nueva, así que da tiempo de sobra a que
+       * el evento salga antes de que el navegador cambie de sitio.
+       */
+      function escucharDescargas() {
+        document.addEventListener('click', function (e) {
+          var enlace = e.target.closest && e.target.closest('a[href]')
+          if (!enlace || !window.fbq) return
+
+          var destino = enlace.href
+          var tienda = destino.indexOf('apps.apple.com') > -1 ? 'ios'
+                     : destino.indexOf('play.google.com') > -1 ? 'android'
+                     : null
+          if (!tienda) return
+
+          window.fbq('trackCustom', 'Download', {
+            store: tienda,
+            page: location.pathname,
+          })
+        })
+      }
+
+      window.arrancarPixel = function () {
+        cargar()
+        window.fbq('init', PIXEL)
+        window.fbq('track', 'PageView')
+        escucharDescargas()
+      }
+
+      // Aquí es donde se decide quién queda medido. Ver el aviso de arriba.
+      window.arrancarPixel()
+    })()
+  </script>
+  <noscript><img height="1" width="1" style="display:none" alt=""
+    src="https://www.facebook.com/tr?id=1750437386268481&ev=PageView&noscript=1"></noscript>

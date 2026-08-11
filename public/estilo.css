@@ -168,7 +168,7 @@ section { padding-block: var(--seccion); }
   font-weight: 680; letter-spacing: -0.02em; font-size: 1.05rem;
   text-decoration: none; margin-right: auto;
 }
-.marca img { width: 34px; height: 34px; border-radius: 8px; }
+.marca img { width: 40px; height: 40px; border-radius: 9px; }
 
 .nav { display: none; gap: 1.75rem; font-size: var(--t-sm); }
 @media (min-width: 52rem) { .nav { display: flex; } }

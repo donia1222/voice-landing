@@ -160,7 +160,7 @@ section { padding-block: var(--seccion); }
 
 .cabecera .contenedor {
   display: flex; align-items: center; gap: 1.5rem;
-  min-height: 4rem;
+  min-height: 4.75rem;
 }
 
 .marca {
@@ -168,7 +168,7 @@ section { padding-block: var(--seccion); }
   font-weight: 680; letter-spacing: -0.02em; font-size: 1.05rem;
   text-decoration: none; margin-right: auto;
 }
-.marca img { width: 40px; height: 40px; border-radius: 9px; }
+.marca img { width: 56px; height: 56px; border-radius: 13px; }
 
 .nav { display: none; gap: 1.75rem; font-size: var(--t-sm); }
 @media (min-width: 52rem) { .nav { display: flex; } }

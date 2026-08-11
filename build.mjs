@@ -250,6 +250,47 @@ function selectorIdiomas(langActual, ruta) {
     .join('\n        ')
 }
 
+/**
+ * Script que manda al visitante a su idioma antes del primer pintado.
+ *
+ * Solo se emite en las páginas del idioma principal, que son las que están en
+ * la raíz del dominio: si alguien llega a "/" con el navegador en alemán, ve
+ * "/de" sin pasar por el inglés. Condiciones para no molestar:
+ *
+ *   - si ya eligió idioma a mano (localStorage "idioma"), no se toca nada;
+ *   - se recorre navigator.languages en orden y gana la primera coincidencia,
+ *     así que un navegador en "en-GB, de" se queda en inglés;
+ *   - location.replace, para no dejar una entrada muerta en el historial.
+ *
+ * El canonical y los hreflang siguen apuntando donde deben, así que los
+ * buscadores indexan las cinco versiones igual que antes.
+ */
+function redireccionIdioma(ruta, soloIdioma) {
+  if (soloIdioma) return ''
+  const otros = idiomas.filter((l) => l !== PRINCIPAL)
+  if (!otros.length) return ''
+
+  const destino = JSON.stringify(ruta ? `/${ruta}` : '')
+
+  return `
+  <!-- Lleva al visitante a su idioma si el navegador pide uno de los nuestros. -->
+  <script>
+    (function () {
+      try { if (localStorage.getItem('idioma')) return } catch (e) {}
+      var nuestros = ${JSON.stringify(otros)}
+      var pedidos = navigator.languages || [navigator.language || '']
+      for (var i = 0; i < pedidos.length; i++) {
+        var l = String(pedidos[i] || '').toLowerCase().split('-')[0]
+        if (l === ${JSON.stringify(PRINCIPAL)}) return
+        if (nuestros.indexOf(l) !== -1) {
+          location.replace('/' + l + ${destino} + location.search + location.hash)
+          return
+        }
+      }
+    })()
+  </script>`
+}
+
 // ---------------------------------------------------------------- generación
 
 rmSync(DIST, { recursive: true, force: true })
@@ -317,6 +358,8 @@ for (const lang of idiomas) {
       anyo: new Date().getFullYear(),
       canonical: url(lang, pagina.ruta),
       hreflang: hreflang(pagina.ruta, pagina.soloIdioma),
+      // Solo en la raíz del dominio: las demás ya están en su idioma.
+      redirIdioma: lang === PRINCIPAL ? redireccionIdioma(pagina.ruta, pagina.soloIdioma) : '',
       selectorIdiomas: selectorIdiomas(lang, pagina.ruta),
       f: formulario[lang] ?? formulario[PRINCIPAL],
       s: soporte[lang] ?? soporte[PRINCIPAL],

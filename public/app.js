@@ -41,6 +41,16 @@
     enlaceBarra.href = 'https://play.google.com/store/apps/details?id=com.lwebch.VoiceList'
   }
 
+  // --------------------------------------------- elección manual de idioma
+  // Al elegir a mano, se apunta la decisión: el script de la cabecera que
+  // detecta el idioma del navegador ya no vuelve a intervenir. Así quien
+  // quiera leer la web en inglés con el navegador en otro idioma, puede.
+  Array.prototype.forEach.call(document.querySelectorAll('.lang-opt'), function (a) {
+    a.addEventListener('click', function () {
+      try { localStorage.setItem('idioma', a.getAttribute('hreflang') || '') } catch (e) {}
+    })
+  })
+
   // ----------------------------------------- cierre del menú de idiomas
   var menu = document.querySelector('.idiomas')
   if (menu) {

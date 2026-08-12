@@ -288,7 +288,7 @@ section { padding-block: var(--seccion); }
   background-position: center;
 }
 .video-marco[data-lqip="widget"] {
-  background-image: url("data:image/jpeg;base64,/9j//gAQTGF2YzYyLjExLjEwMAD/2wBDAAgsLDQsNDw8PDw8PEdCR0pKSkdHR0dKSkpPT09dXV1PT09KSk9PWFhdXWVoZWBgXWBoaG5uboSEfn6amp+9veT/xABkAAEBAQEBAAAAAAAAAAAAAAAGBQQCBwEBAQEBAAAAAAAAAAAAAAAABAEAAxAAAgICAgEFAQAAAAAAAAAAAQIAAxEhEjFCUVJBIpETEQEBAQEBAQAAAAAAAAAAAAAAATEhEWH/wAARCAAUABQDASIAAhEAAxEA/9oADAMBAAIRAxEAPwD0ZUXiuh16SqEQ+I/Ifrur4KCwyBuVBfV7xL36wrcgDaGNSFiar7cv9TkYEP8A9GjvaISGtSOoKZQp1PSPiALO5JrrcTORnfIzDOogV//Z");
+  background-image: url("data:image/jpeg;base64,/9j//gAQTGF2YzYyLjExLjEwMAD/2wBDAAgsLDQsNDw8PDw8PEdCR0pKSkdHR0dKSkpPT09dXV1PT09KSk9PWFhdXWVoZWBgXWBoaG5uboSEfn6amp+9veT/xABsAAACAwEBAQAAAAAAAAAAAAABBQYCAAQDBwEBAQEBAAAAAAAAAAAAAAAABAUAAxAAAgECAgsBAQAAAAAAAAAAAAECIQNSERMEEhQi0ZHBoXFBYVERAQEBAQEBAAAAAAAAAAAAAAABETEhAv/AABEIABIAFAMBIgACEQADEQD/2gAMAwEAAhEDEQA/AGasynVNLqX3W5iXnkPNXk3B54uxNUa31xx8k2WqfwrkCdzil7Zx6X8LGjI0CLdasB5x+haR88pqYJhae//Z");
   background-size: cover;
   background-position: center;
 }
@@ -296,8 +296,8 @@ section { padding-block: var(--seccion); }
    hasta ocupar toda la pantalla en portátiles. */
 .video-marco.hero-video { max-width: 30rem; margin-inline: auto; }
 
-/* El widget se grabó vertical: 924x1280. */
-.video-marco.widget-video { aspect-ratio: 924 / 1280; max-width: 20rem; }
+/* El widget se grabó apaisado, con aire a los lados: 1000x864. */
+.video-marco.widget-video { aspect-ratio: 1000 / 864; max-width: 30rem; }
 
 /* --- de la lista de papel a la app --- */
 /* Reutiliza el reparto del hero, pero con una ilustración y un h2: en la

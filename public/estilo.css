@@ -46,6 +46,10 @@
   --lectura: 40rem;
   --seccion: clamp(4rem, 9vw, 7.5rem);
   --radio: 14px;
+
+  /* El tic de las listas, como máscara: así toma el color de quien lo use
+     y no hay que repetir el SVG por cada elemento. */
+  --tic: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='%23000' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M13.5 4.5 6 12l-3.5-3.5'/%3E%3C/svg%3E");
 }
 
 @media (prefers-color-scheme: dark) {
@@ -246,9 +250,27 @@ section { padding-block: var(--seccion); }
 }
 .hero h1 { margin-bottom: 1.1rem; }
 .hero h1 .acento { color: var(--acento-ink); }
-.hero .entradilla { max-width: 34rem; margin-bottom: 2rem; }
-.hero .tiendas { margin-bottom: 1rem; }
+/* Márgenes cortos a propósito: en un móvil de 667 px los botones de tienda
+   se quedaban justo debajo del pliegue, y ese es el único clic que importa
+   en esta página. Con esto entran sin hacer scroll. */
+.hero .entradilla { max-width: 34rem; margin-bottom: 1.5rem; }
+.hero .tiendas { margin-bottom: 1.1rem; }
 .hero-nota { font-size: var(--t-xs); color: var(--muted); }
+
+/* Las tres señales bajo los botones. Son hechos comprobables, no adorno:
+   mientras la app no tenga valoraciones, es la única prueba honesta que hay. */
+.hero-confianza {
+  list-style: none; margin: 0; padding: 0;
+  display: flex; flex-wrap: wrap; gap: 0.35rem 1.15rem;
+  font-size: var(--t-xs); color: var(--ink-2);
+}
+.hero-confianza li { display: inline-flex; align-items: center; gap: 0.4rem; }
+.hero-confianza li::before {
+  content: ""; flex: none; width: 0.9rem; height: 0.9rem;
+  background: var(--acento-ink);
+  -webkit-mask: var(--tic) center / contain no-repeat;
+          mask: var(--tic) center / contain no-repeat;
+}
 
 .hero-rejilla { display: grid; gap: clamp(2.5rem, 5vw, 4rem); align-items: center; }
 /* Los hijos de un grid tienen min-width:auto, así que el tamaño intrínseco

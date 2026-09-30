@@ -37,20 +37,11 @@
         </ul>
       </div>
 
-      <!-- El vídeo lleva los subtítulos encima, en HTML, para que sirva
-           el mismo archivo en todos los idiomas. -->
-      <figure class="video-marco es-cuadrado hero-video" data-lqip="hero" style="margin:0">
-        <video poster="/img/cartel-hero.jpg" muted playsinline loop preload="metadata">
-          <source src="/video/hero.mp4" type="video/mp4">
-        </video>
-
-        <button class="video-play" type="button" aria-label="Play">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-            <path d="M8 5.2v13.6a.6.6 0 0 0 .92.5l10.6-6.8a.6.6 0 0 0 0-1l-10.6-6.8A.6.6 0 0 0 8 5.2z"/>
-          </svg>
-        </button>
-        <figcaption class="subtitulo" data-visible="no"></figcaption>
-        <script type="application/json" class="cues">{{{subsHero}}}</script>
+      <!-- Captura del iPhone con el Apple Watch al lado. Sin marco ni fondo:
+           el PNG trae transparencia y queda bien en claro y en oscuro. -->
+      <figure class="hero-imagen">
+        <img src="/img/hero-watch.webp" alt="{{heroWatchAlt}}" width="851" height="1264" fetchpriority="high">
+        <figcaption>{{heroWatch}}</figcaption>
       </figure>
 
     </div>

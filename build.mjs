@@ -336,16 +336,7 @@ for (const lang of idiomas) {
     ]
 
     if (esInicio) {
-      esquemas.push(faqSchema, {
-        '@context': 'https://schema.org',
-        '@type': 'VideoObject',
-        name: meta.title,
-        description: meta.description,
-        thumbnailUrl: `${SITIO}/img/cartel-hero.jpg`,
-        uploadDate: hoy,
-        contentUrl: `${SITIO}/video/hero.mp4`,
-        transcript: (subtitulos.hero[lang] ?? subtitulos.hero[PRINCIPAL]).map((c) => c.texto).join(' '),
-      })
+      esquemas.push(faqSchema)
     }
 
     const datos = {

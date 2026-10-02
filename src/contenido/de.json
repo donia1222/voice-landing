@@ -77,5 +77,15 @@
   "shoppingCalendar": "Einkaufskalender",
   "shoppingCalendarDesc": "Leg eine Liste auf ein Datum und werde am Tag erinnert. Plane die Woche und mach den Grosseinkauf nicht mehr aus dem Kopf.",
   "barraCta": "Laden",
-  "barraNota": "Gratis · Keine Werbung"
+  "barraNota": "Gratis · Keine Werbung",
+  "relojEtiqueta": "Apple Watch",
+  "relojTitulo": "Deine Liste am ",
+  "relojTituloAcento": "Handgelenk",
+  "relojDescription": "Diktiere eine Liste, ohne das Handy herauszuholen, und hake ab, wenn die Hände voll sind. Es synchronisiert sich von selbst.",
+  "relojPaso1Titulo": "Sag es der Uhr",
+  "relojPaso1": "Mikro antippen und die Artikel nennen. Die Liste entsteht direkt dort — auch wenn das Handy in der Tasche bleibt.",
+  "relojPaso2Titulo": "Die ganze Liste dabei",
+  "relojPaso2": "Alles, was du am Handy gespeichert hast, ist am Handgelenk. Füge etwas hinzu, sobald es dir einfällt.",
+  "relojPaso3Titulo": "Beim Einkaufen abhaken",
+  "relojPaso3": "Ein Tipp pro Artikel, während du den Wagen schiebst. Das Handy bekommt es von selbst mit."
 }

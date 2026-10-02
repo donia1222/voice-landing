@@ -77,5 +77,15 @@
   "shoppingCalendar": "Shopping Calendar",
   "shoppingCalendarDesc": "Put a list on a date and get a reminder when the day comes. Plan the week ahead and stop doing the big shop from memory.",
   "barraCta": "Download",
-  "barraNota": "Free · No ads"
+  "barraNota": "Free · No ads",
+  "relojEtiqueta": "Apple Watch",
+  "relojTitulo": "Your list on your ",
+  "relojTituloAcento": "wrist",
+  "relojDescription": "Dictate a list without taking out your phone, and tick things off with your hands full. It syncs by itself.",
+  "relojPaso1Titulo": "Say it to your watch",
+  "relojPaso1": "Tap the mic and name the items. The list is created right there, even with the phone in your pocket.",
+  "relojPaso2Titulo": "The whole list, on you",
+  "relojPaso2": "Everything you saved on the phone is on your wrist. Add an item whenever you remember one.",
+  "relojPaso3Titulo": "Tick it off as you go",
+  "relojPaso3": "One tap per item while you push the trolley. The phone finds out on its own."
 }

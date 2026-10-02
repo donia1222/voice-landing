@@ -77,5 +77,15 @@
   "shoppingCalendar": "Calendario della spesa",
   "shoppingCalendarDesc": "Metti una lista in un giorno e ricevi il promemoria quando arriva. Pianifica la settimana invece di andare a memoria.",
   "barraCta": "Ottieni",
-  "barraNota": "Gratis · Senza pubblicità"
+  "barraNota": "Gratis · Senza pubblicità",
+  "relojEtiqueta": "Apple Watch",
+  "relojTitulo": "La tua lista al ",
+  "relojTituloAcento": "polso",
+  "relojDescription": "Detta una lista senza tirare fuori il telefono e spunta con le mani occupate. Si sincronizza da solo.",
+  "relojPaso1Titulo": "Dillo all'orologio",
+  "relojPaso1": "Tocca il microfono e di' i prodotti. La lista nasce lì, anche con il telefono in tasca.",
+  "relojPaso2Titulo": "Tutta la lista addosso",
+  "relojPaso2": "Tutto quello che hai salvato sul telefono è al tuo polso. Aggiungi un prodotto appena te ne ricordi.",
+  "relojPaso3Titulo": "Spunta mentre fai la spesa",
+  "relojPaso3": "Un tocco per prodotto mentre spingi il carrello. Il telefono se ne accorge da solo."
 }

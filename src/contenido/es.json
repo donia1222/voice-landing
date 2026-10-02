@@ -77,5 +77,15 @@
   "shoppingCalendar": "Calendario de compras",
   "shoppingCalendarDesc": "Pon una lista en un día y recibe el aviso cuando llegue. Planifica la semana y deja de hacer la compra grande de memoria.",
   "barraCta": "Descargar",
-  "barraNota": "Gratis · Sin anuncios"
+  "barraNota": "Gratis · Sin anuncios",
+  "relojEtiqueta": "Apple Watch",
+  "relojTitulo": "Tu lista en la ",
+  "relojTituloAcento": "muñeca",
+  "relojDescription": "Dicta una lista sin sacar el móvil y ve tachando con las manos ocupadas. Se sincroniza solo.",
+  "relojPaso1Titulo": "Díselo al reloj",
+  "relojPaso1": "Pulsa el micro y di los productos. La lista se crea ahí mismo, aunque el móvil esté en el bolsillo.",
+  "relojPaso2Titulo": "La lista entera, encima",
+  "relojPaso2": "Todo lo que guardaste en el móvil está en tu muñeca. Añade un producto en cuanto te acuerdes.",
+  "relojPaso3Titulo": "Tacha mientras compras",
+  "relojPaso3": "Un toque por producto mientras empujas el carro. El móvil se entera solo."
 }

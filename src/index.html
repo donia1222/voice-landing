@@ -47,7 +47,95 @@
     </div>
   </section>
   <!-- ==================================================== foto a lista -->
-  <!-- Mismo reparto que el hero, pero con la ilustración en vez del vídeo:
+    <!-- ======================================================= reloj -->
+  <!--
+    Las tres pantallas colgadas de un hilo que serpentea, como en la landing de
+    Horas Trabajo. La caja del reloj es un SVG y no una foto: escala sin pesar y
+    toma los grises de la pagina.
+
+    La geometria va toda en el mismo `viewBox` de 1000x620 que el hilo, asi que
+    una `y` de aqui es la misma `y` en pantalla y los nudos caen donde deben sin
+    depender del ancho. El hilo y los nudos llevan `vector-effect` para que al
+    estirarse a lo ancho el trazo no engorde.
+
+    Las capturas son del reloj de verdad, en ingles como el resto de la
+    galeria; lo que se traduce son los pies.
+  -->
+  <section id="reloj">
+    <div class="contenedor centrado">
+      <p class="etiqueta"><span class="punto"></span>{{relojEtiqueta}}</p>
+      <h2 style="margin-top:.6rem">{{relojTitulo}}<span class="acento">{{relojTituloAcento}}</span></h2>
+      <p class="entradilla" style="margin-top:.9rem">{{relojDescription}}</p>
+    </div>
+
+    <!-- La caja del reloj, dibujada una vez y usada tres. -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <defs>
+        <linearGradient id="reloj-cuerpo" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#4B4F58"/>
+          <stop offset=".5" stop-color="#2B2E34"/>
+          <stop offset="1" stop-color="#3A3E45"/>
+        </linearGradient>
+        <linearGradient id="reloj-correa" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0" stop-color="#2A2D33"/>
+          <stop offset="1" stop-color="#1B1D21"/>
+        </linearGradient>
+        <g id="caja-de-reloj">
+          <rect x="76" y="0" width="68" height="42" rx="14" fill="url(#reloj-correa)"/>
+          <rect x="76" y="226" width="68" height="42" rx="14" fill="url(#reloj-correa)"/>
+          <rect x="12" y="20" width="196" height="228" rx="46" fill="url(#reloj-cuerpo)"/>
+          <rect x="209" y="102" width="6" height="24" rx="3" fill="#5A5F69"/>
+          <rect x="210" y="136" width="4" height="26" rx="2" fill="#4A4E57"/>
+          <rect x="24" y="31" width="172" height="206" rx="38" fill="#000"/>
+        </g>
+      </defs>
+    </svg>
+
+    <div class="reloj-ruta-marco">
+      <div class="reloj-ruta">
+        <svg class="reloj-hilo" viewBox="0 0 1000 620" preserveAspectRatio="none" aria-hidden="true">
+          <path d="M -90 508 C 20 508, 90 328, 180 328 C 270 328, 410 508, 500 508 C 590 508, 730 328, 820 328 C 910 328, 980 508, 1090 508"
+                fill="none" stroke="currentColor" stroke-width="2"
+                stroke-dasharray="7 9" stroke-linecap="round"
+                vector-effect="non-scaling-stroke"/>
+          <circle cx="180" cy="328" r="6" fill="currentColor"/>
+          <circle cx="500" cy="508" r="6" fill="currentColor"/>
+          <circle cx="820" cy="328" r="6" fill="currentColor"/>
+        </svg>
+
+        <figure class="reloj-parada" style="--x:18%;--y:10px">
+          <h3>{{relojPaso1Titulo}}</h3>
+          <div class="reloj-caja">
+            <svg viewBox="0 0 220 268" aria-hidden="true"><use href="#caja-de-reloj"/></svg>
+            <img src="/img/reloj/dictar.webp" alt="{{relojPaso1Titulo}}"
+                 width="368" height="448" loading="lazy" decoding="async">
+          </div>
+          <figcaption>{{relojPaso1}}</figcaption>
+        </figure>
+
+        <figure class="reloj-parada" style="--x:50%;--y:190px">
+          <h3>{{relojPaso2Titulo}}</h3>
+          <div class="reloj-caja">
+            <svg viewBox="0 0 220 268" aria-hidden="true"><use href="#caja-de-reloj"/></svg>
+            <img src="/img/reloj/lista.webp" alt="{{relojPaso2Titulo}}"
+                 width="368" height="448" loading="lazy" decoding="async">
+          </div>
+          <figcaption>{{relojPaso2}}</figcaption>
+        </figure>
+
+        <figure class="reloj-parada" style="--x:82%;--y:10px">
+          <h3>{{relojPaso3Titulo}}</h3>
+          <div class="reloj-caja">
+            <svg viewBox="0 0 220 268" aria-hidden="true"><use href="#caja-de-reloj"/></svg>
+            <img src="/img/reloj/tachar.webp" alt="{{relojPaso3Titulo}}"
+                 width="368" height="448" loading="lazy" decoding="async">
+          </div>
+          <figcaption>{{relojPaso3}}</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+<!-- Mismo reparto que el hero, pero con la ilustración en vez del vídeo:
        de la lista de papel a la lista de la app. -->
   <section id="foto-lista" class="hero foto-lista">
     <div class="contenedor hero-rejilla">

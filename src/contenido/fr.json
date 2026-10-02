@@ -77,5 +77,15 @@
   "shoppingCalendar": "Calendrier de courses",
   "shoppingCalendarDesc": "Placez une liste à une date et recevez un rappel le jour venu. Planifiez la semaine au lieu de tout faire de mémoire.",
   "barraCta": "Obtenir",
-  "barraNota": "Gratuit · Sans publicité"
+  "barraNota": "Gratuit · Sans publicité",
+  "relojEtiqueta": "Apple Watch",
+  "relojTitulo": "Ta liste au ",
+  "relojTituloAcento": "poignet",
+  "relojDescription": "Dicte une liste sans sortir ton téléphone et coche les articles les mains pleines. La synchro se fait toute seule.",
+  "relojPaso1Titulo": "Dis-le à ta montre",
+  "relojPaso1": "Touche le micro et nomme les produits. La liste se crée là, même avec le téléphone dans la poche.",
+  "relojPaso2Titulo": "Toute la liste sur toi",
+  "relojPaso2": "Tout ce que tu as enregistré sur le téléphone est à ton poignet. Ajoute un produit dès que tu y penses.",
+  "relojPaso3Titulo": "Coche en faisant les courses",
+  "relojPaso3": "Une touche par produit pendant que tu pousses le chariot. Le téléphone se met à jour tout seul."
 }
